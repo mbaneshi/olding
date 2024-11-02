@@ -1,0 +1,20 @@
+
+   - name: Install pnpm globally
+      npm:
+        name: pnpm
+        global: yes
+
+   - name: Install Playwright globally
+      npm:
+        name: playwright
+        global: yes
+
+   - name: Install FastAPI globally
+      npm:
+        name: fastapi
+        global: yes
+
+   - name: Install Streamlit globally
+      npm:
+        name: streamlit
+        global: yes

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cscot.pages.dev/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://cscot.pages.dev/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="../../../../css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cscot.pages.dev","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="../../../../js/config.js"></script>
+
+    <meta name="description" content="Xray-core v1.8.0 adds support for REALITY.  REALITY implements full TLS using the SNI of a camouflage website. This eliminates the TLS fingerprint of the server, while preserving perfect forward secre">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xray REALITY tutorial">
+<meta property="og:url" content="https://cscot.pages.dev/2023/03/02/Xray-REALITY-tutorial/index.html">
+<meta property="og:site_name" content="cscot">
+<meta property="og:description" content="Xray-core v1.8.0 adds support for REALITY.  REALITY implements full TLS using the SNI of a camouflage website. This eliminates the TLS fingerprint of the server, while preserving perfect forward secre">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cscot.pages.dev/images/v2rayn-reality.png">
+<meta property="article:published_time" content="2023-03-02T06:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-28T10:52:36.920Z">
+<meta property="article:author" content="Computer Scot">
+<meta property="article:tag" content="xray">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cscot.pages.dev/images/v2rayn-reality.png">
+
+
+<link rel="canonical" href="index.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://cscot.pages.dev/2023/03/02/Xray-REALITY-tutorial/","path":"2023/03/02/Xray-REALITY-tutorial/","title":"Xray REALITY tutorial"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Xray REALITY tutorial | cscot</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="../../../../css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="https://cscot.pages.dev/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">cscot</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Buy-VPS"><span class="nav-number">1.</span> <span class="nav-text">Buy VPS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Get-terminal-app"><span class="nav-number">2.</span> <span class="nav-text">Get terminal app</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Prepare-server"><span class="nav-number">3.</span> <span class="nav-text">Prepare server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Enable-BBR-congestion-control-algorithm"><span class="nav-number">4.</span> <span class="nav-text">Enable BBR congestion control algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Install-Xray-on-server"><span class="nav-number">5.</span> <span class="nav-text">Install Xray on server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Generate-parameters"><span class="nav-number">6.</span> <span class="nav-text">Generate parameters</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Determine-camouflage-website"><span class="nav-number">7.</span> <span class="nav-text">Determine camouflage website</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Xray-configuration-on-the-server"><span class="nav-number">8.</span> <span class="nav-text">Xray configuration on the server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Run-Xray-on-the-server"><span class="nav-number">9.</span> <span class="nav-text">Run Xray on the server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Xray-core-command-line-client-for-Windows"><span class="nav-number">10.</span> <span class="nav-text">Xray-core command-line client for Windows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#v2rayN-GUI-client-for-Windows"><span class="nav-number">11.</span> <span class="nav-text">v2rayN GUI client for Windows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#v2rayNG-client-for-Android"><span class="nav-number">12.</span> <span class="nav-text">v2rayNG client for Android</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="index.html#Learn-more"><span class="nav-number">13.</span> <span class="nav-text">Learn more</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Computer Scot</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="https://cscot.pages.dev/archives/">
+          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="index.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Computer Scot">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cscot">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Xray REALITY tutorial | cscot">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Xray REALITY tutorial
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-03-02 06:00:00" itemprop="dateCreated datePublished" datetime="2023-03-02T06:00:00+00:00">2023-03-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-28 10:52:36" itemprop="dateModified" datetime="2023-09-28T10:52:36+00:00">2023-09-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Xray-core v1.8.0 adds support for REALITY. </p>
+<p>REALITY implements full TLS using the SNI of a camouflage website. This eliminates the TLS fingerprint of the server, while preserving perfect forward secrecy and preventing certificate chain attacks. It is not only more conventient, it also provides greater security than conventional TLS.</p>
+<p>This article shows you how to install Xray-core on a server and client with REALITY security.</p>
+<p>With thanks to <a target="_blank" rel="noopener" href="https://github.com/rprx">@rprx</a>, <a target="_blank" rel="noopener" href="https://github.com/chika0801">@chika0801</a>, <a target="_blank" rel="noopener" href="https://github.com/2dust">@2dust</a>, and all other contributors to this post. Any errors that remain are my own.</p>
+<h2 id="Buy-VPS"><a href="index.html#Buy-VPS" class="headerlink" title="Buy VPS"></a>Buy VPS</h2><p>International lines out of China are congested. Therefore it is important to pay attention to the routing of traffic to your VPS. The most expensive option is IPLC&#x2F;IEPL. Assuming you can’t or won’t go that far, the next most expensive is a VPS with CN2 GIA routing in Hong Kong. That service is offered by BandwagonHost. Again, it is still very expensive. A CN2 GIA server in Los Angeles is more affordable. To find all the CN2 GIA options on the BandwagonHost website, click <strong>CN2 GIA</strong>, read the description of the different possibilities, then scroll down and click <strong>All Services</strong>. Search the services page (<strong>Ctrl</strong>+<strong>f</strong>) for <strong>CN2 GIA</strong>. </p>
+<p>Some other options for China are Vultr and Aliyun (Alibaba Cloud).</p>
+<p>For Iran, the difficulty is in making payment. Try AlphaVPS, RackNerd, Noez, or Aeza.</p>
+<p>Since IP addresses frequently get blocked, ask potential providers if you can change your server’s IP address whenever necessary.</p>
+<p>For the VPS hardware, 1 GB of RAM is sufficient for a small number of users. Choose a recent version of Debian or Ubuntu as your operating system.</p>
+<p>You do not need a domain name or DNS records for Xray REALITY.</p>
+<h2 id="Get-terminal-app"><a href="index.html#Get-terminal-app" class="headerlink" title="Get terminal app"></a>Get terminal app</h2><p>You can use the terminal application in macOS or Linux to SSH into your server. Modern versions of Windows PowerShell also support SSH. </p>
+<p>You may prefer to use a purpose-built SSH app such as PuTTY, XSHELL, or FinalShell. </p>
+<h2 id="Prepare-server"><a href="index.html#Prepare-server" class="headerlink" title="Prepare server"></a>Prepare server</h2><p>SSH into your server using Windows PowerShell or the terminal app in Linux or macOS. Replace <code>&lt;SERVER-IP-ADDRESS&gt;</code> by your actual server IP address in the command below:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@&lt;SERVER-IP-ADDRESS&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Suppress lengthy login messages:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .hushlogin</span><br></pre></td></tr></table></figure>
+
+<p>Get the existing package metadata up to date, and upgrade all existing packages:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt upgrade</span><br></pre></td></tr></table></figure>
+
+<p>You may be prompted to reboot and then SSH back in again.</p>
+<p>Protect your server with <code>iptables</code>, replacing <code>&lt;HOME-IP-ADDRESS&gt;</code> by your actual home IP address:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line">iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line">iptables -A INPUT -p icmp -j ACCEPT</span><br><span class="line">iptables -A INPUT -p tcp --dport 22 -s &lt;HOME-IP-ADDRESS&gt; -j ACCEPT</span><br><span class="line">iptables -A INPUT -p tcp --dport 22 -j DROP</span><br><span class="line">iptables -A INPUT -p tcp --dport 80 -j ACCEPT</span><br><span class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT</span><br><span class="line">iptables -P INPUT DROP</span><br><span class="line"></span><br><span class="line">ip6tables -A INPUT -i lo -j ACCEPT</span><br><span class="line">ip6tables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">ip6tables -A INPUT -p ipv6-icmp -j ACCEPT</span><br><span class="line">ip6tables -P INPUT DROP</span><br></pre></td></tr></table></figure>
+
+<p>Check that you can still access the server with these rules before you make them permanent:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br><span class="line"></span><br><span class="line">ssh root@&lt;SERVER-IP-ADDRESS&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Make the <code>iptables</code> rules permanent:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install iptables-persistent</span><br></pre></td></tr></table></figure>
+
+<h2 id="Enable-BBR-congestion-control-algorithm"><a href="index.html#Enable-BBR-congestion-control-algorithm" class="headerlink" title="Enable BBR congestion control algorithm"></a>Enable BBR congestion control algorithm</h2><p>Copy and paste these three commands into your SSH session to enable the Bottleneck Bandwidth and Round-trip propagation time (BBR) congestion control algorithm:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf</span><br><span class="line">echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf</span><br><span class="line">sysctl -p</span><br></pre></td></tr></table></figure>
+
+<h2 id="Install-Xray-on-server"><a href="index.html#Install-Xray-on-server" class="headerlink" title="Install Xray on server"></a>Install Xray on server</h2><p>Install Xray version 1.8.0 or later to run as root:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c &quot;$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)&quot; @ install --beta -u root</span><br></pre></td></tr></table></figure>
+
+<h2 id="Generate-parameters"><a href="index.html#Generate-parameters" class="headerlink" title="Generate parameters"></a>Generate parameters</h2><p>On the Linux server, generate a universally unique id with <code>./xray uuid</code>. Example of output:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9f2b4b10-6818-492e-a157-d5131d450c7b</span><br></pre></td></tr></table></figure>
+
+<p>Plug the id into both the server and the client configuration files.</p>
+<p>Generate a public-private key pair with <code>./xray x25519</code>. Example of output:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Private key: M4cZLR81ErNfxnG1fAnNUIATs_UXqe6HR78wINhH7RA</span><br><span class="line">Public key: ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY</span><br></pre></td></tr></table></figure>
+
+<p>Plug the private key into the server configuration file, and the public key into the client configuration file.</p>
+<p>Choose a shortId of up to 16 hexadecimal characters. Example:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b1</span><br></pre></td></tr></table></figure>
+
+<p>Plug this into the server and client configuration files.</p>
+<h2 id="Determine-camouflage-website"><a href="index.html#Determine-camouflage-website" class="headerlink" title="Determine camouflage website"></a>Determine camouflage website</h2><p>The minimum standard of the camouflage website is that it be a foreign website, support TLSv1.3 and H2, and have a URL that is not redirected elsewhere (though the apex domain name may be redirected to <code>www</code>). </p>
+<p>Bonus points if it has a similar IP to your server, the handshake messages after the “Server Hello” are encrypted together (such as for <code>dl.google.com</code>), and the server implements Online Certificate Status Protocol (OCSP) stapling. </p>
+<p>Plug your camouflage website into both the server and the client configuration files.</p>
+<p>Our example: <code>www.microsoft.com</code>.</p>
+<h2 id="Xray-configuration-on-the-server"><a href="index.html#Xray-configuration-on-the-server" class="headerlink" title="Xray configuration on the server"></a>Xray configuration on the server</h2><p>If you specify <code>security</code> of <code>reality</code>, these are the possible properties of <code>realitySettings</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>show</code></td>
+<td>Optional. If true, output debugging information.</td>
+</tr>
+<tr>
+<td><code>dest</code></td>
+<td>Required. The format is the same as the dest of VLESS fallbacks.</td>
+</tr>
+<tr>
+<td><code>xver</code></td>
+<td>Optional. The format is the same as xver of VLESS fallbacks.</td>
+</tr>
+<tr>
+<td><code>serverNames</code></td>
+<td>Required. The serverName list available to the client. Does not support * wildcards.</td>
+</tr>
+<tr>
+<td><code>privateKey</code></td>
+<td>Required. Execute <code>./xray x25519</code> to generate</td>
+</tr>
+<tr>
+<td><code>minClientVer</code></td>
+<td>Optional. The minimum version of client Xray. The format is <code>x.y.z</code>.</td>
+</tr>
+<tr>
+<td><code>maxClientVer</code></td>
+<td>Optional. The highest version of client Xray. The format is <code>x.y.z</code>.</td>
+</tr>
+<tr>
+<td><code>maxTimeDiff</code></td>
+<td>Optional. The maximum time difference allowed in milliseconds.</td>
+</tr>
+<tr>
+<td><code>shortIds</code></td>
+<td>Required. The shortId list available to the client, which can be used to distinguish different clients. If set to an empty string, the client shortId can be empty. If non-empty, should be a multiple of 2 hexadecimal digits, with a maximum of 16 hexadecimal digits.</td>
+</tr>
+</tbody></table>
+<p>In the template for <code>/usr/local/etc/xray/config.json</code> below, Xray listens on <code>0.0.0.0:443</code>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;log&quot;: &#123;</span><br><span class="line">        &quot;loglevel&quot;: &quot;warning&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;routing&quot;: &#123;</span><br><span class="line">        &quot;domainStrategy&quot;: &quot;IPIfNonMatch&quot;,</span><br><span class="line">        &quot;rules&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;domain&quot;: [</span><br><span class="line">                    &quot;geosite:category-ads-all&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;block&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;ip&quot;: [</span><br><span class="line">                    &quot;geoip:cn&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;block&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;inbounds&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;listen&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">            &quot;port&quot;: 443,</span><br><span class="line">            &quot;protocol&quot;: &quot;vless&quot;,</span><br><span class="line">            &quot;settings&quot;: &#123;</span><br><span class="line">                &quot;clients&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: &quot;9f2b4b10-6818-492e-a157-d5131d450c7b&quot;,</span><br><span class="line">                        &quot;flow&quot;: &quot;xtls-rprx-vision&quot;</span><br><span class="line">                    &#125;</span><br><span class="line">                ],</span><br><span class="line">                &quot;decryption&quot;: &quot;none&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;streamSettings&quot;: &#123;</span><br><span class="line">                &quot;network&quot;: &quot;tcp&quot;,</span><br><span class="line">                &quot;security&quot;: &quot;reality&quot;,</span><br><span class="line">                &quot;realitySettings&quot;: &#123;</span><br><span class="line">                    &quot;show&quot;: false,</span><br><span class="line">                    &quot;dest&quot;: &quot;www.microsoft.com:443&quot;,</span><br><span class="line">                    &quot;xver&quot;: 0,</span><br><span class="line">                    &quot;serverNames&quot;: [</span><br><span class="line">                        &quot;www.microsoft.com&quot;</span><br><span class="line">                    ],</span><br><span class="line">                    &quot;privateKey&quot;: &quot;M4cZLR81ErNfxnG1fAnNUIATs_UXqe6HR78wINhH7RA&quot;,</span><br><span class="line">                    &quot;minClientVer&quot;: &quot;&quot;,</span><br><span class="line">                    &quot;maxClientVer&quot;: &quot;&quot;,</span><br><span class="line">                    &quot;maxTimeDiff&quot;: 0,</span><br><span class="line">                    &quot;shortIds&quot;: [</span><br><span class="line">                        &quot;b1&quot;</span><br><span class="line">                    ]</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;sniffing&quot;: &#123;</span><br><span class="line">                &quot;enabled&quot;: true,</span><br><span class="line">                &quot;destOverride&quot;: [</span><br><span class="line">                    &quot;http&quot;,</span><br><span class="line">                    &quot;tls&quot;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    &quot;outbounds&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;protocol&quot;: &quot;freedom&quot;,</span><br><span class="line">            &quot;tag&quot;: &quot;direct&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;protocol&quot;: &quot;blackhole&quot;,</span><br><span class="line">            &quot;tag&quot;: &quot;block&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    &quot;policy&quot;: &#123;</span><br><span class="line">        &quot;levels&quot;: &#123;</span><br><span class="line">            &quot;0&quot;: &#123;</span><br><span class="line">                &quot;handshake&quot;: 3,</span><br><span class="line">                &quot;connIdle&quot;: 180</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Run-Xray-on-the-server"><a href="index.html#Run-Xray-on-the-server" class="headerlink" title="Run Xray on the server"></a>Run Xray on the server</h2><p>After saving your server configuration file in <code>/usr/local/etc/xray/config.json</code>, restart the Xray service with the command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart xray</span><br></pre></td></tr></table></figure>
+
+<h2 id="Xray-core-command-line-client-for-Windows"><a href="index.html#Xray-core-command-line-client-for-Windows" class="headerlink" title="Xray-core command-line client for Windows"></a>Xray-core command-line client for Windows</h2><p>Download the latest release from <a target="_blank" rel="noopener" href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a>, e.g. <code>Xray-windows-64.zip</code> version 1.8.0.</p>
+<p>Unzip the <code>.zip</code> file.</p>
+<p>Create a client configuration file <code>config.json</code>. If you specify <code>security</code> of <code>reality</code>, these are the possible properties of <code>realitySettings</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>show</code></td>
+<td>Optional. If true, output debugging information.</td>
+</tr>
+<tr>
+<td><code>fingerprint</code></td>
+<td>Required. Use uTLS library to emulate client TLS fingerprint.</td>
+</tr>
+<tr>
+<td><code>serverName</code></td>
+<td>One of the server names.</td>
+</tr>
+<tr>
+<td><code>publicKey</code></td>
+<td>The public key corresponding to the private key of the server.</td>
+</tr>
+<tr>
+<td><code>shortId</code></td>
+<td>One of the server shortIds.</td>
+</tr>
+<tr>
+<td><code>spiderX</code></td>
+<td>The initial path and parameters of the crawler are recommended to be different for each client.</td>
+</tr>
+</tbody></table>
+<p>Here is a template for <code>Downloads\Xray-windows-64\config.json</code> into which you can substitute your own values:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;log&quot;: &#123;</span><br><span class="line">        &quot;loglevel&quot;: &quot;warning&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;routing&quot;: &#123;</span><br><span class="line">        &quot;domainStrategy&quot;: &quot;IPIfNonMatch&quot;,</span><br><span class="line">        &quot;rules&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;domain&quot;: [</span><br><span class="line">                    &quot;geosite:category-ads-all&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;block&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;domain&quot;: [</span><br><span class="line">                    &quot;geosite:category-games@cn&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;direct&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;domain&quot;: [</span><br><span class="line">                    &quot;geosite:geolocation-!cn&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;proxy&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;domain&quot;: [</span><br><span class="line">                    &quot;geosite:cn&quot;,</span><br><span class="line">                    &quot;geosite:private&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;direct&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;type&quot;: &quot;field&quot;,</span><br><span class="line">                &quot;ip&quot;: [</span><br><span class="line">                    &quot;geoip:cn&quot;,</span><br><span class="line">                    &quot;geoip:private&quot;</span><br><span class="line">                ],</span><br><span class="line">                &quot;outboundTag&quot;: &quot;direct&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;inbounds&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;listen&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">            &quot;port&quot;: 10808,</span><br><span class="line">            &quot;protocol&quot;: &quot;socks&quot;,</span><br><span class="line">            &quot;settings&quot;: &#123;</span><br><span class="line">                &quot;udp&quot;: true</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;sniffing&quot;: &#123;</span><br><span class="line">                &quot;enabled&quot;: true,</span><br><span class="line">                &quot;destOverride&quot;: [</span><br><span class="line">                    &quot;http&quot;,</span><br><span class="line">                    &quot;tls&quot;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;listen&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">            &quot;port&quot;: 10809,</span><br><span class="line">            &quot;protocol&quot;: &quot;http&quot;,</span><br><span class="line">            &quot;sniffing&quot;: &#123;</span><br><span class="line">                &quot;enabled&quot;: true,</span><br><span class="line">                &quot;destOverride&quot;: [</span><br><span class="line">                    &quot;http&quot;,</span><br><span class="line">                    &quot;tls&quot;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    &quot;outbounds&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;protocol&quot;: &quot;vless&quot;,</span><br><span class="line">            &quot;settings&quot;: &#123;</span><br><span class="line">                &quot;vnext&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;address&quot;: &quot;167.99.243.148&quot;,</span><br><span class="line">                        &quot;port&quot;: 443,</span><br><span class="line">                        &quot;users&quot;: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                &quot;id&quot;: &quot;9f2b4b10-6818-492e-a157-d5131d450c7b&quot;,</span><br><span class="line">                                &quot;flow&quot;: &quot;xtls-rprx-vision&quot;,</span><br><span class="line">                                &quot;encryption&quot;: &quot;none&quot;</span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;streamSettings&quot;: &#123;</span><br><span class="line">                &quot;network&quot;: &quot;tcp&quot;,</span><br><span class="line">                &quot;security&quot;: &quot;reality&quot;,</span><br><span class="line">                &quot;realitySettings&quot;: &#123;</span><br><span class="line">                    &quot;show&quot;: false,</span><br><span class="line">                    &quot;fingerprint&quot;: &quot;chrome&quot;,</span><br><span class="line">                    &quot;serverName&quot;: &quot;www.microsoft.com&quot;,</span><br><span class="line">                    &quot;publicKey&quot;: &quot;ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY&quot;,</span><br><span class="line">                    &quot;shortId&quot;: &quot;b1&quot;,</span><br><span class="line">                    &quot;spiderX&quot;: &quot;/&quot;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;tag&quot;: &quot;proxy&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;protocol&quot;: &quot;freedom&quot;,</span><br><span class="line">            &quot;tag&quot;: &quot;direct&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;protocol&quot;: &quot;blackhole&quot;,</span><br><span class="line">            &quot;tag&quot;: &quot;block&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>If you use Windows Notepad as your editor, remember to save <code>Downloads\Xray-windows-64\config.json</code> without the usual <code>.txt</code> on the end of its name.</p>
+<p>Open Windows PowerShell and run the client:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Downloads\Xray-windows-64</span><br><span class="line">.\xray.exe -c config.json</span><br></pre></td></tr></table></figure>
+
+<p>Configure your browser to use the SOCKS proxy on <code>127.0.0.1</code> port <code>10808</code>.</p>
+<h2 id="v2rayN-GUI-client-for-Windows"><a href="index.html#v2rayN-GUI-client-for-Windows" class="headerlink" title="v2rayN GUI client for Windows"></a>v2rayN GUI client for Windows</h2><p>v2rayN version 6.17 adds support for REALITY and removes legacy XTLS settings.</p>
+<p>The screenshot below shows the v2rayN panel with language set to English. If you have never changed the v2rayN language before, watch the video demonstration <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=UMkR7YxFuX8">How to change v2rayN to English</a>.</p>
+<p><img src="../../../../images/v2rayn-reality.png" alt="v2rayN configured for REALITY"></p>
+<h2 id="v2rayNG-client-for-Android"><a href="index.html#v2rayNG-client-for-Android" class="headerlink" title="v2rayNG client for Android"></a>v2rayNG client for Android</h2><p>v2rayNG version 1.8.0 adds support for REALITY and removes legacy XTLS settings.</p>
+<h2 id="Learn-more"><a href="index.html#Learn-more" class="headerlink" title="Learn more"></a>Learn more</h2><p>Consult the README in the <a target="_blank" rel="noopener" href="https://github.com/XTLS/Xray-core">Xray-core</a> repository.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="https://cscot.pages.dev/tags/xray/" rel="tag"># xray</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="https://cscot.pages.dev/2023/03/01/Xray-Vision/" rel="prev" title="Xray Vision">
+                  <i class="fa fa-chevron-left"></i> Xray Vision
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="https://cscot.pages.dev/2023/03/21/Testing%20gRPC%20H2%20on%20Xray%20REALITY/" rel="next" title="Testing gRPC HTTP/2 on Xray REALITY">
+                  Testing gRPC HTTP/2 on Xray REALITY <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Computer Scot</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="../../../../js/comments.js"></script><script src="../../../../js/utils.js"></script><script src="../../../../js/motion.js"></script><script src="../../../../js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ba501be6c8b14145a726f9105bc6f827"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

@@ -1,0 +1,96 @@
+Here’s a brief description of each binary you listed:
+
+- **0mq**: High-performance asynchronous messaging library (ZeroMQ).
+- **abseil**: Google's C++ common libraries used in various systems.
+- **aichat**: A CLI tool to interact with AI models.
+- **aom**: Video codec library for encoding AV1 video.
+- **apr**: Apache Portable Runtime, supporting libraries for cross-platform development.
+- **apr-util**: Utilities for Apache Portable Runtime (APR).
+- **argon2**: A cryptographic hash function, often used for password hashing.
+- **aribb24**: ARIB STD-B24 decoder library for Japan's broadcasting system.
+- **aspell**: Spell-checking tool.
+- **at-spi2-core**: Assistive technology service provider interface core libraries.
+- **autoconf**: Tool for producing shell scripts to automatically configure software.
+- **bat**: A cat command clone with syntax highlighting and Git integration.
+- **bdw-gc (boehmgc)**: Garbage collector for C and C++.
+- **boost**: Collection of peer-reviewed C++ libraries.
+- **bottom**: Terminal-based system monitor and resource manager.
+- **brotli**: Compression algorithm developed by Google.
+- **btop**: Resource monitor, similar to `htop`, but with a more modern interface.
+- **c-ares**: Asynchronous DNS requests library.
+- **ca-certificates**: SSL certificates for securing communication.
+- **cairo**: 2D graphics library for rendering vector graphics.
+- **certifi**: Python package for providing Mozilla’s CA certificates.
+- **cffi**: Foreign Function Interface for calling C code from Python.
+- **chafa**: Terminal-based image converter that uses ANSI art.
+- **cjson**: Fast JSON library for C.
+- **cmake**: Build automation tool for managing the build process.
+- **cocoapods**: Dependency manager for Swift and Objective-C projects.
+- **composer**: Dependency management tool for PHP.
+- **curl**: Tool for transferring data using various network protocols.
+- **dav1d**: Fast AV1 video decoder.
+- **dbus**: Message bus system for inter-process communication.
+- **deno**: A secure runtime for JavaScript and TypeScript.
+- **diff-so-fancy**: Enhances Git diffs with better readability.
+- **double-conversion**: Efficient binary-decimal and decimal-binary conversion routines.
+- **dua-cli**: Disk usage analyzer with interactive CLI.
+- **duf**: Disk usage utility, similar to `df`, with a more modern UI.
+- **dust**: Disk usage visualization tool.
+- **dutree**: Disk usage visualizer using an interactive text-based tree.
+- **edencommon**: Facebook's common C++ utility libraries.
+- **emscripten**: Toolchain for compiling C/C++ into WebAssembly.
+- **eureka**: CLI tool for running and tracking project eureka moments.
+- **expect**: Automation tool for running interactive applications.
+- **eza**: Modern `ls` replacement with Git support.
+- **fb303**: Common monitoring and instrumentation tools.
+- **fbthrift**: Lightweight RPC framework developed by Facebook.
+- **fd**: Simple, fast and user-friendly alternative to `find`.
+- **feh**: Image viewer for X11 with support for slideshows.
+- **ffmpeg**: Tools for handling multimedia data.
+- **fish**: Friendly interactive shell.
+- **fizz**: Facebook's library for the transport layer security protocol.
+- **flac**: Free Lossless Audio Codec, used for audio compression.
+- **fmt**: Formatting library for C++.
+- **folly**: Collection of reusable C++ library components developed by Facebook.
+- **fontconfig**: Font configuration and customization library.
+- **freetds**: Libraries for accessing Microsoft SQL Server and Sybase databases.
+- **freetype**: Font rendering engine.
+- **frei0r**: Simple effects plugin API for video applications.
+- **fribidi**: Unicode BiDi algorithm library for handling right-to-left languages.
+- **fzf**: Command-line fuzzy finder.
+- **gd**: Graphics drawing library used for image creation.
+- **gdk-pixbuf**: Toolkit for image loading and pixel buffer manipulation.
+- **gettext**: Toolset for managing multilingual programs.
+- **gflags**: C++ library for command-line flag parsing.
+- **gh**: GitHub CLI tool for managing repositories.
+- **ghostscript**: Interpreter for PostScript and PDF files.
+- **giflib**: GIF image library for reading and writing GIF images.
+- **git**: Version control system for tracking code changes.
+- **glew**: OpenGL Extension Wrangler library for loading OpenGL extensions.
+- **glib**: Core application building blocks for libraries like GTK.
+- **glog**: C++ logging library.
+- **gmp**: Library for arbitrary precision arithmetic.
+- **gnupg**: Open-source encryption software implementing OpenPGP.
+- **gnutls**: Library implementing the SSL, TLS and DTLS protocols.
+- **go**: Go programming language, also called Golang.
+- **gource**: Software version control visualization tool.
+- **graphite2**: Rendering engine for complex writing systems.
+- **gtk+3**: Cross-platform widget toolkit for creating graphical user interfaces.
+- **harfbuzz**: Text shaping library.
+- **helix**: A modal text editor built with Rust.
+- **htop**: Interactive process viewer, similar to `top`.
+- **hugo**: Static site generator.
+- **hyperfine**: Command-line benchmarking tool.
+- **icu4c**: International Components for Unicode for Unicode support.
+- **imagemagick**: Image manipulation software.
+- **imath**: Math library for high-quality math operations.
+- **jasper**: Library for manipulating JPEG-2000 images.
+- **jpeg-turbo**: High-speed JPEG image compression library.
+- **jpeg-xl**: New JPEG standard offering improved quality and compression.
+- **jq**: Command-line JSON processor.
+
+Let me know if you need any more details on a specific binary!
+
+```bash
+nvim binary_descriptions.md
+```

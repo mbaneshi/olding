@@ -1,0 +1,13 @@
+{
+  "v": "2",
+  "ps": "Cloudflare VLESS",
+  "add": "example.com", // Your domain
+  "port": "443", // Port 443 (HTTPS)
+  "id": "YOUR-UUID", // Same UUID from the Xray server config
+  "aid": "0",
+  "net": "ws", // WebSocket transport
+  "type": "none",
+  "host": "example.com", // Your domain name
+  "path": "/ws", // WebSocket path from server config
+  "tls": "tls" // Enable TLS
+}

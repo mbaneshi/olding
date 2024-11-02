@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Shortcut Extension",
+  "version": "1.0",
+  "description": "Opens various functionalities for ChatGPT with keyboard shortcuts.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "commands": {
+    "_open_new_chat": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+N"
+      },
+      "description": "Open a new ChatGPT tab"
+    },
+    "_clear_chat": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+J"
+      },
+      "description": "Clear the current chat"
+    },
+    "_toggle_dark_mode": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+D"
+      },
+      "description": "Toggle dark/light mode"
+    },
+    "_show_help": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+H"
+      },
+      "description": "Display help"
+    },
+    "_save_conversation": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+S"
+      },
+      "description": "Save conversation history"
+    }
+  }
+}

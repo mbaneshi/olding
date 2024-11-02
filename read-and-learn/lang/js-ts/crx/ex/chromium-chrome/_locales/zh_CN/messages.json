@@ -1,0 +1,2191 @@
+{
+  "appName": {
+    "message": "Glarity -利用ChatGPT4生成摘要和翻译，支持YouTube视频（免费无广告）"
+  },
+  "appDesc": {
+    "message": "Glarity Summary利用ChatGPT4为YouTube视频生成摘要及关键时刻；Glarity用GPT免费为网页生成摘要总结及最准确的翻译。"
+  },
+  "option": {
+    "message": "选项"
+  },
+  "trigger_mode": {
+    "message": "触发模式"
+  },
+  "always": {
+    "message": "自动"
+  },
+  "always_tip": {
+    "message": "AI自动为搜索结果或YouTube视频生成摘要"
+  },
+  "manually": {
+    "message": "手动"
+  },
+  "manually_tip": {
+    "message": "当手动点击[生成摘要]按钮时，AI将生成摘要"
+  },
+  "language": {
+    "message": "语言"
+  },
+  "language_tip": {
+    "message": "总结内容使用的语言。"
+  },
+  "aiprovider": {
+    "message": "AI提供商"
+  },
+  "gpt3_5tip": {
+    "message": "GPT-3.5对于免费和Plus用户没有限制。"
+  },
+  "gpt4_tip": {
+    "message": "GPT-4适用于Plus用户，配额非常有限。"
+  },
+  "open_ai_tip": {
+    "message": "OpenAI官方API，更加稳定，按使用量计费。"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "customize_prompt": {
+    "message": "自定义摘要指令"
+  },
+  "use_default": {
+    "message": "使用默认值"
+  },
+  "enable_disable_glarity": {
+    "message": "启用/禁用Glarity"
+  },
+  "enable_disable_tip": {
+    "message": "您可以在以下网站上启用/禁用Glarity摘要。"
+  },
+  "select_all": {
+    "message": "全选/反选"
+  },
+  "page_summary": {
+    "message": "总结页面"
+  },
+  "show_icon": {
+    "message": "显示Glarity图标"
+  },
+  "disable_icon": {
+    "message": "禁用Glarity图标\n"
+  },
+  "show_icon_tip": {
+    "message": "一旦隐藏，Glarity图标将不再显示在页面上。当然，您可以通过点击浏览器扩展图标来激活摘要功能。"
+  },
+  "whitelist_sites": {
+    "message": "白名单网站"
+  },
+  "whitelist_sites_tip": {
+    "message": "仅在这些网站上显示Glarity图标（每行一个URL）。"
+  },
+  "blacklist_sites": {
+    "message": "黑名单网站"
+  },
+  "blacklist_sites_tip": {
+    "message": "在这些网站上不显示Glarity图标（每行一个URL）。"
+  },
+  "login_tip": {
+    "message": "请登录并通过{{site}}的Cloudflare验证"
+  },
+  "summary": {
+    "message": "摘要"
+  },
+  "create_tweet": {
+    "message": "创建推文"
+  },
+  "explain": {
+    "message": "解释"
+  },
+  "translation": {
+    "message": "翻译"
+  },
+  "q_and_a": {
+    "message": "问答"
+  },
+  "important": {
+    "message": "重要"
+  },
+  "theme": {
+    "message": "主题"
+  },
+  "auto": {
+    "message": "自动"
+  },
+  "light": {
+    "message": "浅色"
+  },
+  "dark": {
+    "message": "深色"
+  },
+  "example_prompts": {
+    "message": "示例指令："
+  },
+  "summarize_above": {
+    "message": "总结上述内容要点。"
+  },
+  "extract_gist": {
+    "message": "提取上述内容的要点。"
+  },
+  "what_above": {
+    "message": "上述内容的主要要点是什么？"
+  },
+  "comment_summary": {
+    "message": "总结评论"
+  },
+  "summary_support": {
+    "message": "支持总结亚马逊产品和YouTube视频评论。"
+  },
+  "option_general": {
+    "message": "通用"
+  },
+  "popup_summary": {
+    "message": "划词菜单"
+  },
+  "popup_summary_title": {
+    "message": "当我选中一个单词或短语时："
+  },
+  "popup_summary_tip": {
+    "message": "单击图标显示总结窗口"
+  },
+  "disable_popup_summary": {
+    "message": "不显示图标或弹窗。"
+  },
+  "summary_full_title": {
+    "message": "全文内容总结"
+  },
+  "summary_full": {
+    "message": "对全文进行总结，然而会消耗更多的Key额度。"
+  },
+  "summary_brief": {
+    "message": "简要总结：消耗更少的Token，然而总结内容可能会有遗漏。"
+  },
+  "here": {
+    "message": "这里"
+  },
+  "retry": {
+    "message": "重试"
+  },
+  "ask": {
+    "message": "询问"
+  },
+  "generating": {
+    "message": "生成中..."
+  },
+  "thinking": {
+    "message": "思考中..."
+  },
+  "no_transcription": {
+    "message": "该视频无可用于总结的字幕文档..."
+  },
+  "use_openai_tip": {
+    "message": "注：使用OpenAI API密钥模式将提供更准确的答案"
+  },
+  "no_results": {
+    "message": "Glarity无法获取当前页面内容。请检查网站的安全设置或 刷新页面重新尝试。"
+  },
+  "i_ready": {
+    "message": "已准备好！"
+  },
+  "keep_this_tip": {
+    "message": "保持此选项卡可以使ChatGPT更稳定。"
+  },
+  "login_chatGpt_tip": {
+    "message": "登录ChatGPT网站使用Glarity摘要"
+  },
+  "disable_pop_tip": {
+    "message": "您确定要禁用弹出摘要吗？"
+  },
+  "page_not_supported": {
+    "message": "抱歉，暂不支持该页面"
+  },
+  "content": {
+    "message": "内容"
+  },
+  "ask_chatGPT": {
+    "message": "一键生成总结"
+  },
+  "pop_tip": {
+    "message": "您可以在选项中启用它 弹出摘要。"
+  },
+  "asking_tip": {
+    "message": "Glarity正在生成与关键词相关的问题"
+  },
+  "data_error": {
+    "message": "数据错误"
+  },
+  "gpt_401": {
+    "message": "加载响应失败，请检查API密钥。"
+  },
+  "chat_tip": {
+    "message": "注：询问功能可能会消耗较多Key额度~"
+  },
+  "three_point": {
+    "message": "3个要点"
+  },
+  "ask_page_placeholder": {
+    "message": "向Glarity提出您的问题"
+  },
+  "ask_video_placeholder": {
+    "message": "向Glarity提出您的问题"
+  },
+  "ask_docment_placeholder": {
+    "message": "向Glarity提出您的问题"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "comment_summary_tip": {
+    "message": "对亚马逊产品和YouTube视频评论的支持摘要。"
+  },
+  "faq_about": {
+    "message": "询问当前视频"
+  },
+  "ai_chapter": {
+    "message": "关键时刻"
+  },
+  "beta": {
+    "message": "测试版"
+  },
+  "how_to_use": {
+    "message": "连接AI启动Glarity摘要和翻译网页功能"
+  },
+  "three_ways_to_access": {
+    "message": "Glarity，您的跨语言阅读助手，提供 6 种连接AI服务的方式。选择最适合您需求的方法与AI提供者连接。"
+  },
+  "have_chatgpt_account": {
+    "message": "当你拥有ChatGPT账户时"
+  },
+  "chatgpt_use_desc": {
+    "message": "你必须保持登录到ChatGPT账户的网站上。由于OpenAI的限制，Plus用户和免费用户稳定性并不一致。推荐ChatGPT Plus用户使用。"
+  },
+  "have_openai_key": {
+    "message": "对于拥有API密钥的开发者"
+  },
+  "openai_use_desc": {
+    "message": "官方的OpenAI API更稳定，并且收费是基于使用量的。请按照指南获取API密钥。"
+  },
+  "have_azure_key": {
+    "message": "对于拥有Azure API密钥的开发者"
+  },
+  "azure_use_desc": {
+    "message": "利用Azure OpenAI服务的研发工程师可以获得更稳定的服务。"
+  },
+  "more_ways": {
+    "message": "更多方式+"
+  },
+  "chatgpt_default_model": {
+    "message": "默认"
+  },
+  "chatgpt_default_desc": {
+    "message": "对于免费用户和Plus用户，默认是无限制的。"
+  },
+  "chatgpt_gpt4_model": {
+    "message": "GPT-4"
+  },
+  "chatgpt_gpt4_desc": {
+    "message": "GPT-4适用于Plus用户，并且有非常有限的配额。"
+  },
+  "changes_saved": {
+    "message": "更改已保存"
+  },
+  "token_exceeds_limit_toast": {
+    "message": "抱歉，指令token超过了限制，请尝试将其翻译为英文并保存，或者减少字数。"
+  },
+  "guide_title": {
+    "message": "欢迎使用Glarity"
+  },
+  "guide_desc": {
+    "message": "现在就体验Glarity的高效总结~"
+  },
+  "google_search": {
+    "message": "谷歌搜索"
+  },
+  "youtube_video": {
+    "message": "YouTube视频"
+  },
+  "translation_languages": {
+    "message": "翻译语言"
+  },
+  "recently_used": {
+    "message": "最近使用"
+  },
+  "copy_success": {
+    "message": "复制成功"
+  },
+  "free_queries": {
+    "message": "免费次数：$count$次",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "enter_openai_key_toast": {
+    "message": "请输入你的OpenAI API密钥"
+  },
+  "free_quota_exhausted": {
+    "message": "免费次数已用完了~"
+  },
+  "login_chatgpt_and_refresh_page": {
+    "message": "请登录 $ai$ 并刷新此页面",
+    "placeholders": {
+      "ai": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "goto_chatgpt": {
+    "message": "前往 $ai$ 登录",
+    "placeholders": {
+      "ai": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "use_openai_enhanced": {
+    "message": "使用OpenAI API密钥获取更好的总结体验"
+  },
+  "find_create_openai_key": {
+    "message": "你可以在这里找到或创建你的API密钥"
+  },
+  "change_openai_api": {
+    "message": "如果这种情况持续发生，请将扩展设置里的AI提供商更改为OpenAI API。"
+  },
+  "goto_options": {
+    "message": "前往编辑选项"
+  },
+  "ai_not_responding": {
+    "message": "AI无响应"
+  },
+  "select_valid_model": {
+    "message": "请选择一个有效的模型"
+  },
+  "enter_azure_key": {
+    "message": "请输入你的Azure API密钥"
+  },
+  "enter_azure_endpoint": {
+    "message": "请输入你的Azure终结点"
+  },
+  "enter_azure_name": {
+    "message": "请输入你的Azure部署名称"
+  },
+  "enter_claude_key": {
+    "message": "请输入你的Claude API密钥"
+  },
+  "transcript": {
+    "message": "视频字幕"
+  },
+  "or": {
+    "message": "或"
+  },
+  "back": {
+    "message": "返回"
+  },
+  "aiAskYoutubeTip": {
+    "message": "Glarity正在预测您想了解的问题"
+  },
+  "clickOpen": {
+    "message": "展开"
+  },
+  "clickClose": {
+    "message": "收起"
+  },
+  "tips": {
+    "message": "提示"
+  },
+  "confirm": {
+    "message": "确认"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "have_glarity": {
+    "message": "推荐所有用户使用"
+  },
+  "glarity_use_desc": {
+    "message": "Glarity采用多个AI模型，为您提供卓越的AI辅助服务。"
+  },
+  "my_account": {
+    "message": "我的帐户"
+  },
+  "sign_out": {
+    "message": "退出"
+  },
+  "sign_in": {
+    "message": "登录"
+  },
+  "upgrade_now": {
+    "message": "立即升级"
+  },
+  "go_plus": {
+    "message": "Go Plus"
+  },
+  "basic": {
+    "message": "Basic"
+  },
+  "pro": {
+    "message": "Pro"
+  },
+  "plus": {
+    "message": "Plus"
+  },
+  "unlimited": {
+    "message": "无限版"
+  },
+  "glarity_words_size": {
+    "message": "$size$ k Token可用",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "glarity_unlimited_words": {
+    "message": "无限Token"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "support": {
+    "message": "支持"
+  },
+  "login": {
+    "message": "登录"
+  },
+  "log_out": {
+    "message": "退出"
+  },
+  "subscribe": {
+    "message": "订阅"
+  },
+  "hasLogin_isFree_title": {
+    "message": "免费用量已用完"
+  },
+  "hasLogin_isFree_text": {
+    "message": "升级您的计划以享受无限额度服务"
+  },
+  "hasLogin_noFree_title": {
+    "message": "您的额度已全部使用完"
+  },
+  "hasLogin_noFree_text": {
+    "message": "升级您的计划以享受无限额度服务"
+  },
+  "noLogin_title": {
+    "message": "免费额度已用完"
+  },
+  "noLogin_text": {
+    "message": "登录后继续免费使用Glarity"
+  },
+  "chat_quota_used_up_not_login": {
+    "message": "您的额度已用完。 <br /> 请<a href='$link$'>登录</a> Glarity账号以继续免费体验",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "chat_quota_used_up_free_plan": {
+    "message": "您今天的免费使用额度已用完。额度将在明天重置，或者 <br /> <a href='$link$'>立即升级您的套餐</a> 以享受无限额度服务",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "chat_quota_used_up_limited_plan": {
+    "message": "您的计划额度已用完。 <br /> <a href='$link$'>立即升级您的套餐</a> 以享受无限额度服务",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "more": {
+    "message": "更多"
+  },
+  "is_login_expires_text": {
+    "message": "登录Glarity即可使用~"
+  },
+  "is_login_expires_tip": {
+    "message": "若您已有ChatGPT帐户，您可以<a id='glarity-error-guide-to-options'>切换到ChatGPT模式免费使用。</a>"
+  },
+  "sign_in_now": {
+    "message": "立即登录"
+  },
+  "lone_text_tip": {
+    "message": "切換至'Glarity'，體驗由更強大的AI生成的更佳摘要。"
+  },
+  "ai_chapter_lone_text_tip": {
+    "message": "切換至'Glarity'模式，获取更多关键时刻"
+  },
+  "welcom_title": {
+    "message": "👋 欢迎来到Glarity!"
+  },
+  "welcom_happy": {
+    "message": "很高兴您能加入我们！"
+  },
+  "welcom_text": {
+    "message": "Glarity是一款利用GPT高效总结、翻译网页的浏览器插件，支持跨语言总结YouTube视频。立即开始体验吧。"
+  },
+  "start_now": {
+    "message": "马上体验"
+  },
+  "current_plan": {
+    "message": "当前套餐"
+  },
+  "fell_text": {
+    "message": "感觉额度不够用？"
+  },
+  "glartiy_trial": {
+    "message": "Glarity试用中"
+  },
+  "view_billing": {
+    "message": "查看计费详情"
+  },
+  "tokens_size": {
+    "message": "$size$ 个Tokens",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0/0"
+      }
+    }
+  },
+  "plan_basic_planText": {
+    "message": "GPT阅读：$size$K Tokens/ 月",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "plan_pro_tip": {
+    "message": "大部分人选择的套餐"
+  },
+  "plan_pro_planText0": {
+    "message": "GPT阅读：$size$K Tokens/ 月",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "plan_pro_planText1": {
+    "message": "快速的客户支持"
+  },
+  "plan_pro_planText2": {
+    "message": "允许使用所有Pro功能"
+  },
+  "plan_pro_funcList0": {
+    "message": "智能搜索"
+  },
+  "plan_pro_funcList1": {
+    "message": "搜索摘要"
+  },
+  "plan_pro_funcList2": {
+    "message": "YouTube摘要"
+  },
+  "plan_pro_funcList3": {
+    "message": "PDF摘要"
+  },
+  "plan_pro_funcList4": {
+    "message": "关键时刻"
+  },
+  "plan_pro_funcList5": {
+    "message": "向Glarity提问"
+  },
+  "plan_plus_tip": {
+    "message": "针对专业人士"
+  },
+  "plan_plus_planText0": {
+    "message": "GPT阅读：无限Token"
+  },
+  "plan_plus_planText2": {
+    "message": "允许使用所有Plus功能"
+  },
+  "plan_pro": {
+    "message": "Glarity Pro"
+  },
+  "plan_plus": {
+    "message": "Glarity Plus"
+  },
+  "billing_basic": {
+    "message": "Glarity Basic"
+  },
+  "billing_hot": {
+    "message": "🔥 热门"
+  },
+  "money_month": {
+    "message": "$money$<span>/月</span>",
+    "placeholders": {
+      "money": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "subscribe_pricing_tip": {
+    "message": "详见<a href='$link$' target='_blank'>价目表</a>以了解Glarity提供的具体服务。",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "unlimited_amount": {
+    "message": "无限量"
+  },
+  "usage": {
+    "message": "余量/总量:"
+  },
+  "sign_in_glarity": {
+    "message": "请<a href='$link$' target='_blank'> 登录 </a>继续享受Glarity模式的免费服务",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "reset_day": {
+    "message": "$day$天后重置",
+    "placeholders": {
+      "day": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "mail_reply": {
+    "message": "邮件快捷回复"
+  },
+  "mail_reply_language": {
+    "message": "回复邮件的语言"
+  },
+  "mail_reply_language_tip": {
+    "message": "适用于您使用快速回复邮件时生成的内容。'自动'设置将匹配原始电子邮件的语言。"
+  },
+  "mail_reply_tone": {
+    "message": "回复邮件的语气"
+  },
+  "mail_reply_tone_tip": {
+    "message": "将应用于生成邮件时的语气。"
+  },
+  "mail_reply_button": {
+    "message": "快速回复邮件"
+  },
+  "mail_reply_button_tip": {
+    "message": "当您访问您的邮件内容时："
+  },
+  "mail_reply_button_display": {
+    "message": "在邮件页面上显示'快速回复'按钮(目前已支持Gmail&Zoho的邮件)"
+  },
+  "mail_reply_button_none": {
+    "message": "在邮件页面上隐藏'快速回复'按钮"
+  },
+  "Formal": {
+    "message": "正式"
+  },
+  "Personable": {
+    "message": "亲切"
+  },
+  "Natural": {
+    "message": "自然"
+  },
+  "Engaging": {
+    "message": "有吸引力"
+  },
+  "Direct": {
+    "message": "直接"
+  },
+  "mail_sender_intent": {
+    "message": "发件人的意图"
+  },
+  "mail_ideas_of_reply": {
+    "message": "回复提议"
+  },
+  "generate": {
+    "message": "生成"
+  },
+  "mail_textarea_tip": {
+    "message": "请输入要回复的内容"
+  },
+  "insert": {
+    "message": "插入"
+  },
+  "rephrase": {
+    "message": "改写"
+  },
+  "copy": {
+    "message": "复制"
+  },
+  "security_statement": {
+    "message": "请放心，我们的产品采用最新的网络安全措施强化，保证您的邮件安全是我们的首要任务。"
+  },
+  "time_line": {
+    "message": "时间线"
+  },
+  "response_loading": {
+    "message": "正在思考回复建议..."
+  },
+  "guide_to_glarity_mode": {
+    "message": "如果问题持续存在，推荐您切换到 <a id='glarity-error-guide-to-options'>Glarity模式</a>（更快更稳定）"
+  },
+  "context_menu_translate": {
+    "message": "翻译网页/显示原文"
+  },
+  "option_translate": {
+    "message": "翻译"
+  },
+  "option_translate_target_language": {
+    "message": "目标语言"
+  },
+  "option_translate_target_language_desc": {
+    "message": "将其他语言翻译成您设置的语言"
+  },
+  "option_translate_white_list": {
+    "message": "总是翻译这些网站"
+  },
+  "option_translate_white_list_desc": {
+    "message": "以下网站将始终进行翻译"
+  },
+  "option_translate_black_list": {
+    "message": "不要翻译以下网站"
+  },
+  "option_translate_black_list_desc": {
+    "message": "列出这里的网站将不会自动进行翻译。"
+  },
+  "option_translate_list_tip": {
+    "message": "请输入域名，支持通配符。每行输入一个域名。<br/> 例如：*.google.com, google.com/mail/*, https://www.google.com/*"
+  },
+  "option_translate_icon": {
+    "message": "翻译图标"
+  },
+  "option_translate_icon_desc": {
+    "message": "选择此选项将显示“翻译”图标。点击翻译图标可启动翻译您正在浏览的网页"
+  },
+  "option_translate_icon_auto_display": {
+    "message": "在页面上自动显示翻译图标"
+  },
+  "option_translate_icon_auto_display_desc": {
+    "message": "当前页面的语言与目标语言不同时，将自动显示翻译图标。"
+  },
+  "option_translate_icon_always_display": {
+    "message": "始终在页面上显示翻译图标"
+  },
+  "option_translate_icon_never_display": {
+    "message": "隐藏翻译图标"
+  },
+  "option_translate_context_menu": {
+    "message": "创建右键菜单"
+  },
+  "option_translate_context_menu_desc": {
+    "message": "启用后，将在浏览器的右键菜单中添加翻译或显示原文的快捷方式"
+  },
+  "option_translate_context_menu_enabled": {
+    "message": "启用"
+  },
+  "option_translate_context_menu_disabled": {
+    "message": "禁用"
+  },
+  "retry_translate_tip": {
+    "message": "重新翻译所有错误段落"
+  },
+  "no_translation_error_tip": {
+    "message": "GPT未返回翻译内容，请重新尝试翻译"
+  },
+  "quick_reply": {
+    "message": "快速回复"
+  },
+  "that_is_the_one": {
+    "message": "就是这个"
+  },
+  "option_translate_concurrency": {
+    "message": "每秒最大请求数"
+  },
+  "option_translate_target_language_same_as_glarity": {
+    "message": "与Glarity输出语言相同"
+  },
+  "option_translate_target_language_select": {
+    "message": "选择您的目标语言"
+  },
+  "translation_placeholder": {
+    "message": "选择语言"
+  },
+  "translate_it": {
+    "message": "翻译成"
+  },
+  "icon_tooltip_summarize": {
+    "message": "生成摘要"
+  },
+  "icon_tooltip_translate": {
+    "message": "翻译"
+  },
+  "icon_tooltip_translate_cancel": {
+    "message": "取消翻译"
+  },
+  "discover_news_highlights": {
+    "message": "发现新闻亮点!"
+  },
+  "check_it_out": {
+    "message": "去瞧瞧"
+  },
+  "chatgpt_plugin": {
+    "message": "ChatGPT 插件"
+  },
+  "table_features": {
+    "message": "功能"
+  },
+  "table_glarity": {
+    "message": "Glarity会员"
+  },
+  "table_chatgpt": {
+    "message": "ChatGPT 模式"
+  },
+  "table_features_youtube": {
+    "message": "YouTube 视频总结"
+  },
+  "table_features_key": {
+    "message": "YouTube 视频关键时刻"
+  },
+  "table_features_ask": {
+    "message": "提问 YouTube 视频"
+  },
+  "table_features_summary": {
+    "message": "视频总结"
+  },
+  "table_features_twitter": {
+    "message": "Twitter 总结"
+  },
+  "table_features_smart": {
+    "message": "智能搜索"
+  },
+  "table_features_anyPage": {
+    "message": "任何页面的总结"
+  },
+  "table_features_translation": {
+    "message": "镜像翻译"
+  },
+  "table_features_pdf": {
+    "message": "PDF 总结"
+  },
+  "table_features_email": {
+    "message": "快速回复邮件"
+  },
+  "table_features_qa": {
+    "message": "问答优化"
+  },
+  "table_features_agent": {
+    "message": "人工智能代理"
+  },
+  "differenceTable_title": {
+    "message": "Glarity 和 ChatGPT 的区别"
+  },
+  "differenceTable_title_tip": {
+    "message": "（相对受限的 ChatGPT，Glarity 提供更高质量的服务；比较基于 ChatGPT 默认模型 GPT-3.5/4K 令牌。)"
+  },
+  "table_title_youtube": {
+    "message": "YouTube 视频增强"
+  },
+  "table_title_website": {
+    "message": "定制网站增强"
+  },
+  "table_title_widget": {
+    "message": "小部件"
+  },
+  "unlimited_duration": {
+    "message": "无限时长"
+  },
+  "limited_duration": {
+    "message": "受限于 4k 令牌长度（约30分钟）"
+  },
+  "unlimited_summary": {
+    "message": "全文摘要*"
+  },
+  "limited_summary": {
+    "message": "只支持总结最多 4K 文字令牌"
+  },
+  "unlimited_search_summary": {
+    "message": "广泛的源搜索"
+  },
+  "limited_search_summary": {
+    "message": "只支持最多 4K 文字令牌的数据"
+  },
+  "unlimited_side_summary": {
+    "message": "每秒最多支持 10 个并行翻译"
+  },
+  "limited_side_summary": {
+    "message": "只支持一个翻译流"
+  },
+  "unlimited_pdf_summary": {
+    "message": "支持最多约 300 页的 PDFs"
+  },
+  "limited_pdf_summary": {
+    "message": "最多支持 4 页 PDFs"
+  },
+  "unlimited_email_summary": {
+    "message": "确保全面的隐私保护"
+  },
+  "limited_email_summary": {
+    "message": "遵守 ChatGPT 政策"
+  },
+  "unlimited_qa_summary": {
+    "message": "问题长度无限制"
+  },
+  "limited_qa_summary": {
+    "message": "最多支持 4K 文字令牌长度的问题"
+  },
+  "unlimited_agent": {
+    "message": "提供全套服务"
+  },
+  "limited_agent": {
+    "message": "提供有限的服务"
+  },
+  "table_features_news": {
+    "message": "新闻摘要"
+  },
+  "Format": {
+    "message": "格式"
+  },
+  "Auto": {
+    "message": "自动"
+  },
+  "Email": {
+    "message": "邮件"
+  },
+  "News": {
+    "message": "新闻"
+  },
+  "Paragraph": {
+    "message": "段落"
+  },
+  "Blog_Post": {
+    "message": "博文"
+  },
+  "Twitter": {
+    "message": "Twitter"
+  },
+  "Line_Voom": {
+    "message": "Line Voom"
+  },
+  "Tone": {
+    "message": "语气"
+  },
+  "Tone_Auto": {
+    "message": "🤔 自动"
+  },
+  "Tone_Formal": {
+    "message": "🙂 正式"
+  },
+  "Professional": {
+    "message": "🧐 专业"
+  },
+  "Friendly": {
+    "message": "😊 友好"
+  },
+  "Funny": {
+    "message": "😀 有趣"
+  },
+  "Length": {
+    "message": "长度"
+  },
+  "Short": {
+    "message": "较短"
+  },
+  "Medium": {
+    "message": "适中"
+  },
+  "Long": {
+    "message": "较长"
+  },
+  "Compose_welcome_title": {
+    "message": "Glarity Copilot生成草稿"
+  },
+  "Compose_welcome_subtitle": {
+    "message": "描述您想写的内容，AI将为您生成草稿"
+  },
+  "Compose_more_parameters": {
+    "message": "更多参数"
+  },
+  "Add": {
+    "message": "添加"
+  },
+  "Try_again": {
+    "message": "重新生成"
+  },
+  "Chat": {
+    "message": "聊天"
+  },
+  "Compose": {
+    "message": "撰写"
+  },
+  "Compose_input_placeholder": {
+    "message": "详细描述您想要修改的内容"
+  },
+  "Tell_AI_to": {
+    "message": "需要AI..."
+  },
+  "Make_Longer": {
+    "message": "使其更长"
+  },
+  "Make_Shorter": {
+    "message": "使其更短"
+  },
+  "Change_tone_to": {
+    "message": "把语气改成..."
+  },
+  "Review_suggested": {
+    "message": "查看草稿"
+  },
+  "chat_placeholder": {
+    "message": "询问当前页面"
+  },
+  "usage_reached": {
+    "message": "体验Token数已用完。请登录Glarity账号继续享受免费体验。"
+  },
+  "reminder": {
+    "message": "提醒"
+  },
+  "usage_used": {
+    "message": "您套餐内的额度已用完。升级套餐获得更多额度。"
+  },
+  "loading": {
+    "message": "加载中"
+  },
+  "page_summary_text": {
+    "message": "生成页面摘要中"
+  },
+  "search_summary": {
+    "message": "搜索摘要"
+  },
+  "search_summary_text": {
+    "message": "生成搜索摘要"
+  },
+  "create_qa": {
+    "message": "创建问答"
+  },
+  "create_qa_text": {
+    "message": "正在生成相关问答"
+  },
+  "create_twitter": {
+    "message": "生成推特帖子"
+  },
+  "page_summary_action": {
+    "message": "总结当前页面"
+  },
+  "page_comment": {
+    "message": "页面摘要"
+  },
+  "page_comment_text": {
+    "message": "总结当前评价"
+  },
+  "page_video": {
+    "message": "视频摘要"
+  },
+  "page_video_text": {
+    "message": "总结当前视频内容"
+  },
+  "page_article": {
+    "message": "文章摘要"
+  },
+  "page_article_text": {
+    "message": "生成摘要中"
+  },
+  "create_ai_ask": {
+    "message": "创建相关问题"
+  },
+  "Compose_input_placeholder_write": {
+    "message": "告诉AI写什么"
+  },
+  "Quote_Page": {
+    "message": "引用本页"
+  },
+  "Quote_Page_Tip": {
+    "message": "启用后，您可以在写作时引入当前页面的内容作为参考"
+  },
+  "error_glarity_normal_tip": {
+    "message": "\uD83D\uDC69\u200D\uD83D\uDCBC 需要帮助？随时通过<a href='mailto:support@sparticle.com'>support@sparticle.com</a>联系Glarity的客服"
+  },
+  "error_guide_to_chatgpt_mode": {
+    "message": "\uD83D\uDC49 切换到ChatGPT模式继续免费使用"
+  },
+  "error_guide_to_glarity_mode": {
+    "message": "\uD83D\uDC49 切换到Glarity模式，享受更快更稳定的服务"
+  },
+  "error_guide_to_google_mode": {
+    "message": "\uD83D\uDC49 将翻译引擎更改为Google翻译服务"
+  },
+  "error_guide_to_llm_mode": {
+    "message": "\uD83D\uDC49 将翻译引擎更换为LLM-AI服务"
+  },
+  "error_chatgpt_429_title": {
+    "message": "ChatGPT服务暂不可用"
+  },
+  "error_chatgpt_429_desc": {
+    "message": "Google翻译接替提供翻译服务，ChatGPT一旦恢复将自动切换"
+  },
+  "error_google_title": {
+    "message": "Google翻译服务未响应"
+  },
+  "option_translate_service_title": {
+    "message": "翻译服务"
+  },
+  "option_translate_service_desc": {
+    "message": "选择翻译引擎"
+  },
+  "option_translate_service_llm_title": {
+    "message": "使用默认的LLM-AI引擎（翻译更长的文本以获得更好的质量）"
+  },
+  "option_translate_service_llm_desc": {
+    "message": "例如，OpenAI API\\Glarity Mode（若LLM-AI无法提供翻译服务，将自动启用Google翻译提供服务）"
+  },
+  "option_translate_service_google_title": {
+    "message": "Google翻译"
+  },
+  "option_translate_service_google_desc": {
+    "message": "更快速并且不消耗token"
+  },
+  "global_search_title": {
+    "message": "Glarity 全球搜索：$keyword$",
+    "placeholders": {
+      "keyword": {
+        "content": "$1",
+        "example": "关键字"
+      }
+    }
+  },
+  "global_search_translated": {
+    "message": "英文结果：$keyword$...",
+    "placeholders": {
+      "keyword": {
+        "content": "$1",
+        "example": "keyword"
+      }
+    }
+  },
+  "option_global_search_title": {
+    "message": "全球搜索"
+  },
+  "option_global_search_desc": {
+    "message": "在Google中搜索关键词时，提供英语版本搜索推荐"
+  },
+  "option_global_search_enable": {
+    "message": "在Google中启用全球搜索"
+  },
+  "option_global_search_disable": {
+    "message": "在Google中禁用全球搜索"
+  },
+  "disable_global_search_title": {
+    "message": "你确定要禁用全球搜索吗？"
+  },
+  "disable_global_search_temporary": {
+    "message": "禁用至下次访问"
+  },
+  "disable_global_search_global": {
+    "message": "永久禁用"
+  },
+  "disable_global_search_enable_tip": {
+    "message": "*你可以在选项中重新启用它"
+  },
+  "hide_global_search_header": {
+    "message": "隐藏翻译"
+  },
+  "show_global_search_header": {
+    "message": "显示翻译"
+  },
+  "global_search_header_search_language": {
+    "message": "搜索语言"
+  },
+  "global_search_header_search_language_detect": {
+    "message": "检测语言"
+  },
+  "search_term_matching_analysis": {
+    "message": "关键词匹配分析"
+  },
+  "global_search_new_title": {
+    "message": "在英文中找寻答案"
+  },
+  "Youtube_Summarizer": {
+    "message": "体验YouTube总结"
+  },
+  "Google_Summarizer": {
+    "message": "体验Google搜索总结"
+  },
+  "Glarity_on_Twitter": {
+    "message": "体验Twitter总结"
+  },
+  "Glarity_on_Gmail": {
+    "message": "查看Gmail总结指南"
+  },
+  "PDF_Summarizer": {
+    "message": "查看PDF摘要指南"
+  },
+  "WebChat_by_Glarity_AI": {
+    "message": "体验页面问答"
+  },
+  "Translate_Page_by_Glarity_AI": {
+    "message": "查看翻译指南"
+  },
+  "option_translate_service_bing_title": {
+    "message": "微软翻译"
+  },
+  "option_translate_service_bing_desc": {
+    "message": "更快，无需消耗token"
+  },
+  "error_bing_title": {
+    "message": "微软翻译服务无应答"
+  },
+  "error_guide_to_bing_mode": {
+    "message": "\uD83D\uDC49 将翻译引擎切换为微软翻译服务"
+  },
+  "one_click_prompt_max": {
+    "message": "最多可固定5个快捷指令"
+  },
+  "one_click_prompt_min": {
+    "message": "至少必须固定一个快捷指令"
+  },
+  "one_click_prompt_again": {
+    "message": "快捷指令的名称不能重复"
+  },
+  "one_click_prompt_delete_tip": {
+    "message": "这是最后快捷指令，请不要删除"
+  },
+  "one_click_prompt_title": {
+    "message": "提供快捷指令图标以便阅读"
+  },
+  "one_click_prompt_title_tip": {
+    "message": "当你选择文本时图标会出现"
+  },
+  "one_click_prompt_list": {
+    "message": "快捷指令列表"
+  },
+  "one_click_prompt_list_tip": {
+    "message": "编辑或钉住你的快捷指令"
+  },
+  "one_click_prompt_add": {
+    "message": "添加新的快捷指令"
+  },
+  "one_click_prompt_add_title": {
+    "message": "快捷指令设置：添加新的快捷指令"
+  },
+  "one_click_prompt_edit": {
+    "message": "编辑快捷指令"
+  },
+  "one_click_prompt_icon": {
+    "message": "快捷指令图标"
+  },
+  "one_click_prompt_name": {
+    "message": "快捷指令名称"
+  },
+  "one_click_prompt_prompt": {
+    "message": "指令:"
+  },
+  "delete": {
+    "message": "删除"
+  },
+  "one_click_prompt_always": {
+    "message": "选择文本时总是显示快捷指令图标"
+  },
+  "one_click_prompt_display": {
+    "message": "选择文本时不要显示快捷指令图标"
+  },
+  "one_click_prompt_disable_next": {
+    "message": "在下一次访问时禁用"
+  },
+  "one_click_prompt_disabled_site": {
+    "message": "对此网站禁用"
+  },
+  "one_click_prompt_disabled_global": {
+    "message": "全局禁用"
+  },
+  "one_click_prompt_disabled_tip": {
+    "message": "*你可以在选项中重新启用此功能"
+  },
+  "option_translate_service_system_title": {
+    "message": "系统提示"
+  },
+  "option_translate_service_system_tip": {
+    "message": "指定AI的角色。使用{{ text }}表示段落的文本内容，{{ from }}表示源语言，{{ to }}表示目标语言。"
+  },
+  "option_translate_service_prompt_tip": {
+    "message": "发送给AI的指令。用{{text}}表示段落内容，{{from}}表示源语言，{{to}}表示目标语言。建议省略{{text}}并单独提交。"
+  },
+  "option_translate_service_prompt_default": {
+    "message": "Glarity默认提示"
+  },
+  "option_translate_service_prompt_custom": {
+    "message": "自定义LLM提示"
+  },
+  "network_timeout_tip": {
+    "message": "与AI服务的连接超时。请刷新页面或重启设备。"
+  },
+  "failed_fetch_tip": {
+    "message": "无法连接到AI服务。请检查网络并重试。"
+  },
+  "gemini_use_desc": {
+    "message": "谷歌的DeepMind Gemini API专门为多模态设计。"
+  },
+  "find_create_gemini_key": {
+    "message": "你可以点击这里找到或创建你的谷歌Gemini API密钥"
+  },
+  "one_click_prompt": {
+    "message": "快捷指令"
+  },
+  "one_click_prompt_explain_code": {
+    "message": "解释代码"
+  },
+  "one_click_prompt_explain_rewrite": {
+    "message": "改写"
+  },
+  "one_click_prompt_explain_answer": {
+    "message": "回答这问题"
+  },
+  "youtube_search_disable": {
+    "message": "关闭此功能"
+  },
+  "search_disable_choose": {
+    "message": "选择其他语言"
+  },
+  "search_disable_choose_discover_language": {
+    "message": "搜索$language$视频:'$keyword$'",
+    "placeholders": {
+      "language": {
+        "content": "$1",
+        "example": "English"
+      },
+      "keyword": {
+        "content": "$2",
+        "example": "keyword"
+      }
+    }
+  },
+  "search_disable_translated": {
+    "message": "页面已由Glarity翻译。点击图标可关闭翻译"
+  },
+  "search_youTube_title": {
+    "message": "YouTube全球搜索"
+  },
+  "search_provides_quick": {
+    "message": "提供YouTube其他语言视频的快速搜索"
+  },
+  "search_provides_enable": {
+    "message": "启用YouTube搜索中的全球搜索功能"
+  },
+  "search_provides_disable": {
+    "message": "禁用YouTube搜索中的全球搜索功能"
+  },
+  "one_click_prompt_example_title": {
+    "message": "如何编写快捷指令的提示词"
+  },
+  "one_click_prompt_example_tip": {
+    "message": "提示词中可以包含哪些变量？"
+  },
+  "one_click_prompt_example_select_text": {
+    "message": "指在当前页面选中的文本。如果提示词中不包含此变量，选中的文本将被放在引号中，并放置在提示的末尾。"
+  },
+  "one_click_prompt_example_language": {
+    "message": "如果提示词中没有包含该变量，将默认由AI自由输出语言。"
+  },
+  "one_click_prompt_placeholder": {
+    "message": "在此处粘贴或输入提示词。模板可以包含以下任何数量的变量：{{SELECTED_TEXT}} \n {{LANGUAGE}}"
+  },
+  "one_click_prompt_tip_name": {
+    "message": "变量：{{SELECTED_TEXT}} ; {{LANGUAGE}}"
+  },
+  "one_click_prompt_tip": {
+    "message": "*扩展预设提供的变量。在你的提示词中，你可以选择使用或不使用这些变量："
+  },
+  "explain_terminology": {
+    "message": "解释术语"
+  },
+  "pdf_card_title": {
+    "message": "PDF AI 浏览模式"
+  },
+  "pdf_card_open": {
+    "message": "启动 PDF AI 浏览模式"
+  },
+  "pdf_card_summary": {
+    "message": "总结这个PDF"
+  },
+  "pdf_card_translate": {
+    "message": "翻译这个PDF"
+  },
+  "pdf_card_tip": {
+    "message": "在Glarity PDF AI 浏览模式中，您可以选中任意文本进行翻译 或 就PDF内容与AI进行交流"
+  },
+  "option_translate_service_glarity_title": {
+    "message": "深度翻译增强引擎"
+  },
+  "option_translate_service_glarity_desc": {
+    "message": "深度翻译引擎将提升译文的准确性和可阅读性（翻译增强引擎依赖LLM-AI对译文进行润色及优化，请确保AI服务可用）"
+  },
+  "translate_tooltip_title": {
+    "message": "来自Google的翻译："
+  },
+  "translate_tooltip_desc": {
+    "message": "提示：深度翻译增强引擎已改进并替换了页面上的翻译内容。"
+  },
+  "ask_anything": {
+    "message": "问我任何问题"
+  },
+  "select_text_doing": {
+    "message": "想对选中的文本做什么？"
+  },
+  "select_text_title": {
+    "message": "您选择的文本内容"
+  },
+  "ask_ai": {
+    "message": "点击这里随意提问"
+  },
+  "get_gpt4_tip": {
+    "message": "用GPT-4生成更好的答案"
+  },
+  "quota_insufficiently": {
+    "message": "您的GPT-4配额已用尽"
+  },
+  "quota_insufficiently_update": {
+    "message": "升级至Glarity Pro/Plus以继续获取GPT-4的高质量答案"
+  },
+  "quota_insufficiently_login": {
+    "message": "登录您的Glarity账户以继续享受GPT-4的高质量答案"
+  },
+  "one_click_prompt_select_out": {
+    "message": "您提交的文本超出了限制。请提交较短的文本"
+  },
+  "sidebar_keyboard_shortcut": {
+    "message": "侧边栏快捷键"
+  },
+  "sidebar_keyboard_shortcut_subtitle": {
+    "message": "使用快捷键打开侧边栏。"
+  },
+  "launch_the_sidebar": {
+    "message": "激活侧边栏"
+  },
+  "change_shortcut_setting": {
+    "message": "修改快捷键设置"
+  },
+  "translate_tooltip_desc_loading": {
+    "message": "正在润色译文... 请稍等。"
+  },
+  "translate_tooltip_desc_failed": {
+    "message": "润色译文失败."
+  },
+  "translate_tooltip_google_failed": {
+    "message": "糟糕！Google翻译出了小差。"
+  },
+  "power_by_gpt4": {
+    "message": "由GPT-4生成："
+  },
+  "queries_gpt4": {
+    "message": "每月$GPT-4$查询$count$次",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "unlimited_queries_gpt4": {
+    "message": "无限次GPT-4查询"
+  },
+  "gpt4_queries": {
+    "message": "$balance$ / $total$次GPT-4查询",
+    "placeholders": {
+      "balance": {
+        "content": "$1",
+        "example": "0"
+      },
+      "total": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+  "plan_all_planText": {
+    "message": "可享用全部功能"
+  },
+  "plus_plan": {
+    "message": "Plus套餐"
+  },
+  "billed_annually": {
+    "message": "年付"
+  },
+  "limited_time_discount": {
+    "message": "限时优惠"
+  },
+  "get_unlimited_plan": {
+    "message": "获取无限制计划"
+  },
+  "faster_and_more": {
+    "message": "更快速、更稳定"
+  },
+  "option_translate_service_glarity_tooltip": {
+    "message": "将鼠标悬浮在译文上可以查看Google翻译版本"
+  },
+  "grab_size": {
+    "message": "立即享受$size$%的折扣",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "translate_improve_failed": {
+    "message": "重试增强翻译"
+  },
+  "translate_tooltip_hide": {
+    "message": "不再显示此提示。"
+  },
+  "copilot_chat_welcome_title": {
+    "message": "今天有什么可以帮到您？"
+  },
+  "select_img_doing": {
+    "message": "您想对这张图片做些什么？"
+  },
+  "ask_ai_text": {
+    "message": "询问AI"
+  },
+  "translate_img": {
+    "message": "翻译此图片"
+  },
+  "answer_questions": {
+    "message": "回答问题"
+  },
+  "answer_questions_picture": {
+    "message": "回答图片中的问题"
+  },
+  "explain_formula": {
+    "message": "解释这个公式"
+  },
+  "copy_success_tip": {
+    "message": "已复制到剪贴板"
+  },
+  "follow_us": {
+    "message": "关注我们的Twitter"
+  },
+  "like": {
+    "message": "给我们五星评价"
+  },
+  "feedback": {
+    "message": "反馈"
+  },
+  "Chat_Page": {
+    "message": "阅读此页面"
+  },
+  "GPT_4": {
+    "message": "GPT-4"
+  },
+  "option_subtitle_translate": {
+    "message": "视频字幕"
+  },
+  "option_subtitle_translate_auto_title": {
+    "message": "自动启用双语字幕"
+  },
+  "option_subtitle_translate_auto_desc": {
+    "message": "启用后，当视频播放时，双语字幕将自动显示。否则，您需要点击翻译按钮来显示它们"
+  },
+  "option_subtitle_translate_server_title": {
+    "message": "字幕翻译服务"
+  },
+  "option_subtitle_translate_server_desc": {
+    "message": "选择字幕翻译引擎"
+  },
+  "option_subtitle_translate_server_youtube_title": {
+    "message": "YouTube字幕翻译引擎"
+  },
+  "option_subtitle_translate_server_youtube_desc": {
+    "message": "由YouTube翻译的字幕，优先考虑YouTuber上传的字幕"
+  },
+  "option_subtitle_translate_server_llm_title": {
+    "message": "使用您的默认LLM引擎（更流畅的翻译）"
+  },
+  "option_subtitle_translate_server_llm_desc": {
+    "message": "例如，ChatGPT\\OpenAI Api\\Glarity Mode（如果LLM无法提供翻译服务，Google Translate 将作为备选）"
+  },
+  "option_subtitle_translate_server_llm_coming": {
+    "message": "[即将推出，敬请期待！]"
+  },
+  "option_subtitle_translate_icon_show_title": {
+    "message": "双语字幕图标"
+  },
+  "option_subtitle_translate_icon_show_desc": {
+    "message": "页面右上角提供双语字幕快捷方式，此功能目前仅在YouTube平台上可用"
+  },
+  "option_subtitle_translate_icon_show_always": {
+    "message": "始终显示双语字幕图标"
+  },
+  "option_subtitle_translate_icon_show_never": {
+    "message": "不显示双语字幕图标"
+  },
+  "bilingual_control_menu_title": {
+    "message": "双语"
+  },
+  "bilingual_control_menu_item_enable": {
+    "message": "启用双语"
+  },
+  "bilingual_control_menu_item_disable": {
+    "message": "禁用自动双语"
+  },
+  "bilingual_control_menu_hide": {
+    "message": "隐藏此快捷方式"
+  },
+  "bilingual_control_menu_subtitle": {
+    "message": "双语"
+  },
+  "bilingual_loading": {
+    "message": "正在加载……"
+  },
+  "save_to_clipboard": {
+    "message": "保存到剪贴板"
+  },
+  "download": {
+    "message": "下载"
+  },
+  "translate_tip": {
+    "message": "翻译"
+  },
+  "screenshot_tip": {
+    "message": "截图并询问AI"
+  },
+  "setting_tip": {
+    "message": "设置"
+  },
+  "img_modal_error_text": {
+    "message": "您的ChatGPT尚不能与图片进行聊天。"
+  },
+  "img_modal_error_button": {
+    "message": "从Glarity GPT-4获取答案"
+  },
+  "gpt4_count": {
+    "message": "目前GPT-4余量：$count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "youtube_subtitle_429": {
+    "message": "操作太频繁，稍后再试"
+  },
+  "chat_gpt4_exhausted": {
+    "message": "您的GPT4额度已耗尽，正在使用GPT3.5进行回应"
+  },
+  "chat_image_with_ai": {
+    "message": "让AI阅读此图片"
+  },
+  "error_persists": {
+    "message": "若此问题持续出现，"
+  },
+  "advanced_search": {
+    "message": "高级搜索"
+  },
+  "advanced_search_tip": {
+    "message": "探索深度且精确的答案"
+  },
+  "search_question": {
+    "message": "问题"
+  },
+  "search_result": {
+    "message": "答案"
+  },
+  "web_search_result": {
+    "message": "网络搜索结果"
+  },
+  "advanced_search_switch_tip": {
+    "message": "暂未支持ChatGPT。请切换到其他模式。"
+  },
+  "deep_search_step_rewrite": {
+    "message": "理解问题中..."
+  },
+  "deep_search_step_translate": {
+    "message": "修正问题中..."
+  },
+  "deep_search_step_search": {
+    "message": "正在搜索互联网..."
+  },
+  "deep_search_step_matchUrl": {
+    "message": "查找匹配结果中..."
+  },
+  "deep_search_step_matchUrlEn": {
+    "message": "查找匹配结果中..."
+  },
+  "deep_search_step_pageContent": {
+    "message": "解析并分析选定内容中..."
+  },
+  "deep_search_step_answer": {
+    "message": "正在回答问题..."
+  },
+  "pageSummaryEnable_tip": {
+    "message": "始终在页面上显示侧边栏图标"
+  },
+  "pageSummaryEnable_display_tip": {
+    "message": "不在页面上显示侧边栏图标"
+  },
+  "sidebar_icon": {
+    "message": "侧边栏图标"
+  },
+  "sidebar_tip": {
+    "message": "通过位于页面右下角的图标访问Glarity Copilot侧边栏。您可以拖动图标实现上下移动图标"
+  },
+  "free_user_token": {
+    "message": "每日免费获得$size$K令牌",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "bilingual_tip": {
+    "message": "启用双语字幕"
+  },
+  "search": {
+    "message": "智能搜索"
+  },
+  "claude_web_use_desc": {
+    "message": "Claude 是一个强大的AI模型，专攻解析和理解大型文档。您可以在$link$上注册账号。",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "<a href='https://claude.ai' target='_blank' rel='noopener noreferrer'>claude.ai</a>"
+      }
+    }
+  },
+  "have_claude_web_account": {
+    "message": "拥有Claude账户时"
+  },
+  "custom_model": {
+    "message": "自定义模型"
+  },
+  "custom_model_placeholder": {
+    "message": "请输入模型名称"
+  },
+  "openai_advanced_settings": {
+    "message": "高级配置（模型、温度等）"
+  },
+  "model_context_window": {
+    "message": "模型上下文窗口"
+  },
+  "other_value": {
+    "message": "其他值"
+  },
+  "other_value_placeholder": {
+    "message": "请输入最大tokens数"
+  },
+  "other_value_valid": {
+    "message": "Token数必须超过4096"
+  },
+  "test_api": {
+    "message": "测试"
+  },
+  "test_key_fail": {
+    "message": "请求失败，请重新配置密钥。"
+  },
+  "test_key_ok": {
+    "message": "密钥正常可用。"
+  },
+  "deep_search": {
+    "message": "深度搜索"
+  },
+  "translation_line_feed": {
+    "message": "译文换行设置"
+  },
+  "translation_line_feed_desc": {
+    "message": "总是使用换行，对于内容较少时更整洁。"
+  },
+  "translation_line_feed_always": {
+    "message": "总是"
+  },
+  "translation_line_feed_auto": {
+    "message": "自动"
+  },
+  "translation_style": {
+    "message": "译文显示样式"
+  },
+  "translation_style_desc": {
+    "message": "Glarity是您的跨语言阅读助手，可跨语言总结YouTube、Google、Twitter、PDF、电子邮件及任何网页的内容。Glarity还支持免费的网页翻译（镜像式翻译）、邮件写作辅助、网页内容问答等功能！"
+  },
+  "translation_style_default": {
+    "message": "无样式"
+  },
+  "translation_style_highlight": {
+    "message": "高亮"
+  },
+  "translation_style_underline": {
+    "message": "下划线"
+  },
+  "hasLogin_noFree_day_title": {
+    "message": "您今天的额度已用完"
+  },
+  "hasLogin_noFree_day_text": {
+    "message": "您今天的免费额度已用完，额度将在明天重置。或立即升级您的套餐以享受无限额度服务。"
+  },
+  "claude": {
+    "message": "Claude"
+  },
+  "chat_history": {
+    "message": "历史记录"
+  },
+  "read": {
+    "message": "智读"
+  },
+  "chatgpt_not_support_tranlation_tip": {
+    "message": "由于ChatGPT无法支持批量内容翻译，因此ChatGPT模式暂不支持此翻译引擎。请选用其他翻译引擎。或切换至其他 AI 提供商。"
+  },
+  "switch_ai_services": {
+    "message": "切换 AI 服务"
+  },
+  "chat_input_placeholder": {
+    "message": "我能帮您做些什么？"
+  },
+  "open_pdf": {
+    "message": "打开 PDF"
+  },
+  "screenshot_ask_ai": {
+    "message": "截图并询问 AI"
+  },
+  "new_chat": {
+    "message": "新对话"
+  },
+  "change_model": {
+    "message": "切换模型"
+  },
+  "balance_total": {
+    "message": "剩余/总次数"
+  },
+  "use_best_model": {
+    "message": "在本次会话中启用更优模型"
+  },
+  "use_page_chat": {
+    "message": "与当前页面聊天"
+  },
+  "long_content": {
+    "message": "长页面"
+  },
+  "write_python_script": {
+    "message": "编写Python脚本"
+  },
+  "write_thank_note": {
+    "message": "撰写感谢信"
+  },
+  "plan_tour": {
+    "message": "规划旅行"
+  },
+  "suggest_some_names": {
+    "message": "提议一些名称"
+  },
+  "write_message": {
+    "message": "编写信息"
+  },
+  "brainstorm_content_ideas": {
+    "message": "头脑风暴内容创意"
+  },
+  "create_workout_plan": {
+    "message": "制定健身计划"
+  },
+  "create_personal_webpage": {
+    "message": "为我创建个人网页"
+  },
+  "what_squqre": {
+    "message": "144的平方根是什么"
+  },
+  "defeating_boss": {
+    "message": "打败塞尔达的Boss"
+  },
+  "mastering_lookup": {
+    "message": "精通LOOKUP函数"
+  },
+  "recommend_dish": {
+    "message": "推荐一道菜"
+  },
+  "write_python_script_directions": {
+    "message": "用于自动发送每日电子邮件报告"
+  },
+  "write_thank_note_directions": {
+    "message": "感谢我班级的客座讲师"
+  },
+  "plan_tour_directions": {
+    "message": "为巴塞罗那的建筑摄影制定计划"
+  },
+  "suggest_some_names_directions": {
+    "message": "为我的白天咖啡馆、夜晚酒吧的生意起名"
+  },
+  "write_message_directions": {
+    "message": "为朋友在糟糕的一天里附上小猫gif的信息"
+  },
+  "brainstorm_content_ideas_directions": {
+    "message": "为我关于城市设计的新播客节目构思内容"
+  },
+  "create_workout_plan_directions": {
+    "message": "针对阻力训练"
+  },
+  "create_personal_webpage_directions": {
+    "message": "在问我三个问题之后"
+  },
+  "what_squqre_directions": {
+    "message": "解决这个数学问题"
+  },
+  "defeating_boss_directions": {
+    "message": "旷野之息攻略"
+  },
+  "mastering_lookup_directions": {
+    "message": "Excel函数指南"
+  },
+  "recommend_dish_directions": {
+    "message": "为约会对象推荐一道令人印象深刻的菜品"
+  },
+  "smart_search_placeholder": {
+    "message": "输入您想深度搜索的内容"
+  },
+  "faq_trigger_mode": {
+    "message": "常见问题触发模式"
+  },
+  "faq_trigger_mode_always": {
+    "message": "在总结要点后，继续自动生成常见问题解答。"
+  },
+  "faq_trigger_mode_manually": {
+    "message": "点击常见问题模块时生成。"
+  },
+  "advanced_queries_size": {
+    "message": "$balance$ / $total$ 高级查询",
+    "placeholders": {
+      "balance": {
+        "content": "$1",
+        "example": "0"
+      },
+      "total": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+  "advanced_queries": {
+    "message": "高级查询"
+  },
+  "unlimited_advanced_queries": {
+    "message": "无限高级查询"
+  },
+  "gpt_reading": {
+    "message": "GPT 阅读"
+  },
+  "count_day": {
+    "message": "$count$ /每天",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "nothing_more": {
+    "message": "目前为止就这些，没有更多的历史记录。"
+  },
+  "glarity_not_use_desc_day": {
+    "message": "Glarity 利用多种 AI 模型提供先进的 AI 辅助服务。每天享受 $size$ 免费令牌，让每个人都能使用 AI 的力量。<br/> <a href='$link$' target='_blank' rel='noopener noreferrer'>升级到 $plan$ 计划</a>以获取更多令牌和高级功能。",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      },
+      "plan": {
+        "content": "$2",
+        "example": "pro"
+      },
+      "link": {
+        "content": "$3",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "sync_page_content": {
+    "message": "同步页面内容"
+  },
+  "youtube_auto_copy": {
+    "message": "Youtube 总结自动复制"
+  },
+  "youtube_auto_copy_tip": {
+    "message": "开启自动复制YouTube总结后,每次Youtube总结后都会将总结内容复制到剪切板"
+  },
+  "youtube_auto_copy_always": {
+    "message": "开启后每次Youtube总结后都会将总结内容复制到剪切板"
+  },
+  "youtube_auto_copy_manually": {
+    "message": "关闭后每次Youtube总结后需要手动将内容复制到剪切板"
+  },
+  "get_plan_modal_title": {
+    "message": "高级AI查询次数不足"
+  },
+  "get_plan_modal_text": {
+    "message": "高级AI查询"
+  },
+  "get_plan_modal_tip": {
+    "message": "升级以获得无限高级AI查询"
+  },
+  "get_plan_modal_list_title": {
+    "message": "您当前的高级AI查询额度已用尽。立即升级您的计划，享受无限高级AI查询。"
+  },
+  "get_plan_get_more": {
+    "message": "获取更多高级AI查询"
+  },
+  "ai_search_title": {
+    "message": "Glarity AI 搜索"
+  },
+  "ai_search_subtitle": {
+    "message": "零广告，零搜索数据收集，纯净结果"
+  },
+  "ai_search_submit": {
+    "message": "AI 搜索"
+  },
+  "ai_search_placeholder": {
+    "message": "输入您想搜索的内容"
+  },
+  "ai_search_suggest_title": {
+    "message": "尝试搜索"
+  },
+  "ai_search_option_speed": {
+    "message": "极速"
+  },
+  "ai_search_option_speed_desc": {
+    "message": "极速模式，即时获取简洁内容。"
+  },
+  "ai_search_option_quality": {
+    "message": "深度"
+  },
+  "ai_search_option_quality_desc": {
+    "message": "更长的答案，更多参考资料。"
+  },
+  "sign_in_expires": {
+    "message": "您的登录已过期，请重新登录"
+  },
+  "register": {
+    "message": "创建账户"
+  },
+  "sign_up_title": {
+    "message": "创建账户或登录"
+  },
+  "sign_up_tip": {
+    "message": "保存您的聊天记录，个性化您的体验。"
+  },
+  "read_page": {
+    "message": "阅读此页面"
+  },
+  "page_bot_use": {
+    "message": "本页面不支持摘要及相关功能"
+  },
+  "browser_limit_text": {
+    "message": "由于浏览器限制，本页面无法使用 AI 聊天。请尝试其他页面"
+  },
+  "gpt_model_tip": {
+    "message": "选择 GPT-4 后，您将切换到 Glarity AI 服务处理您的数据请求"
+  },
+  "free_trial": {
+    "message": "免费试用"
+  },
+  "youtube_subtitle_server_error": {
+    "message": "$provider$ 暂时不可用，您可以尝试更改翻译服务",
+    "placeholders": {
+      "provider": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "chatgpt_auto_desc": {
+    "message": "使用适当的模型"
+  },
+  "chatgpt_gpt4o_desc": {
+    "message": "浏览、高级数据分析和DALL-E"
+  },
+  "ask_video_text": {
+    "message": "询问关于此视频的问题"
+  },
+  "google_translate_tip": {
+    "message": "谷歌翻译"
+  },
+  "microsoft_translate_tip": {
+    "message": "微软翻译"
+  },
+  "llm_translate_tip": {
+    "message": "AI LLM引擎"
+  },
+  "try_llm_translate_tip": {
+    "message": "新功能：AI LLM引擎，翻译更流畅"
+  },
+  "translate_setting_tip": {
+    "message": "翻译设置"
+  },
+  "translate_model_tip": {
+    "message": "翻译模型"
+  },
+  "switch_chatgpt_translation": {
+    "message": "ChatGPT目前不支持AI LLM翻译引擎。<br />请启用Glarity模式以使用该引擎"
+  },
+  "switch_chatgpt_translation__btn": {
+    "message": "立即切换"
+  },
+  "switch_translation_model_tip": {
+    "message": "下次翻译生效"
+  },
+  "switch_translation_disable_next_visit": {
+    "message": "禁用至下次访问"
+  },
+  "switch_translation_disable_site": {
+    "message": "在此网站禁用"
+  },
+  "switch_translation_disable_global": {
+    "message": "全局禁用"
+  },
+  "switch_translation_disable_tip": {
+    "message": "您可以在选项中重新启用此功能"
+  },
+  "select_img": {
+    "message": "选择图片"
+  },
+  "option_translate_disabled_sidebyside": {
+    "message": "禁用译文镜像显示"
+  },
+  "option_translate_disabled_sidebyside_subtitle": {
+    "message": "禁用译文镜像模式"
+  },
+  "option_translate_disabled_sidebyside_desc": {
+    "message": "禁用译文镜像"
+  },
+  "img_limit_size": {
+    "message": "文件大小超过 $size$MB 限制。请重新选择较小的文件。",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "page_summary_shortcut": {
+    "message": "页面自动摘要快捷键"
+  },
+  "page_summary_shortcut_text": {
+    "message": "使用此快捷键可立即总结当前页面"
+  },
+  "generate_summary_text": {
+    "message": "提示：在<a id='glarity-error-guide-to-options'>设置</a>中可更改为自动摘要。"
+  },
+  "full_page_chat": {
+    "message": "全屏聊天"
+  },
+  "standard": {
+    "message": "Glarity标准版"
+  },
+  "translate_error_tip": {
+    "message": "翻译请求失败"
+  }
+}

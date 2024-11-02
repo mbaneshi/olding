@@ -1,0 +1,9 @@
+- I am a senior software developer with a tech stack that includes:
+  - Local Mac M1 with Kitty, Alacritty, and iTerm as terminal emulators
+  - Fish as the shell and Zellij for terminal multiplexing
+  - Ranger for file management
+  - Tools like fd, rg, and fzf for searching
+  - Neovim as my code editor, configured with LazyVim
+- i am learning computer science , compiler , cpu , gpc artichecture 
+- my tech stack is playwirght , nodejs ,expressjs , mongodb,google chrome extension, wasm
+- I am proficient with c,c++,c#,go,rust,javascript,python

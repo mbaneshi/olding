@@ -1,0 +1,35 @@
+
+---
+- name: Setup Neovim Nightly on Linux
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Ensure required dependencies are installed
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - curl
+        - tar
+
+    - name: Download Neovim nightly build
+      get_url:
+        url: "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz"
+        dest: "/tmp/nvim-linux64.tar.gz"
+
+    - name: Extract Neovim
+      ansible.builtin.unarchive:
+        src: "/tmp/nvim-linux64.tar.gz"
+        dest: "/usr/local"
+        remote_src: yes
+
+    - name: Add Neovim to PATH
+      copy:
+        dest: /etc/profile.d/nvim.sh
+        content: |
+          export PATH=/usr/local/nvim-linux64/bin:$PATH
+      mode: '0755'
+
+    - name: Source Neovim path for current session
+      shell: "source /etc/profile.d/nvim.sh"

@@ -1,0 +1,4 @@
+
+fastapi
+uvicorn
+httpx  # Optional for making HTTP requests, useful for bot interactions

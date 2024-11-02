@@ -1,0 +1,14 @@
+<baneshi@gmail.com>
+<artificialintelligencemehdi@gmail.com>
+<haftkhanbot@gmail.com>
+<finance.shahab2024@gmail.com>
+<carokia.info.x@gmail.com>
+<ideallifementorship@gmail.com>
+<ahmad.pakmehr2023@gmail.com>
+<baneshispace@gmail.com>
+<bodyshahab2023@gmail.com>
+<shookacoursera@gmail.com>
+<shbcoding@gmail.com>
+<baneshi.env@gmail.com>
+<carokiainfo@gmail.com>
+<infocarokia@gmail.com>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenVPN through Tor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:title" content="OpenVPN through Tor">
+  <meta property="og:description" content="How to pass traffic through Tor while exiting to the web from a non-Tor node">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://computerscot.github.io/img/computerscot.png">
+  <meta property="og:url" content="https://computerscot.github.io/openvpn-through-tor.html">
+</head>
+
+<body>
+  <div id="bar">
+    <div class="wrapper">
+      <p><a href="index.html">computerscot.github.io</a></p>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h1>OpenVPN through Tor</h1>
+    <p><em>August 15, 2023</em></p>
+    <p>Someone was asking on Reddit how to pass traffic through Tor while exiting to the web from a non-Tor node. One way to do this would be to exit from any OpenVPN server which is not also a Tor exit node.</p>
+    <p>Principles:</p>
+    <ul>
+      <li>Specify a fixed bridge as the first hop for Tor, so that traffic can be sent to this IP address directly, without creating a routing loop between OpenVPN and Tor</li>
+      <li>Use OpenVPN in TCP mode</li>
+      <li>Specify Tor as a SOCKS proxy for OpenVPN</li>
+      <li>Add a <code>route</code> to the bridge IP address over <code>net_gateway</code> (the pre-existing IP default gateway, read from the routing table)</li>
+    </ul>
+    <p>Tor Browser:</p>
+    <pre>obfs4 XX.XX.XX.XX:80 5EDA...9A08 cert=2upl...d0ew iat-mode=0</pre>
+    <p>OpenVPN client configuration:</p>
+<pre>proto tcp
+socks-proxy 127.0.0.1 9150
+route XX.XX.XX.XX 255.255.255.255 net_gateway</pre>
+    <p>Reference: <a href="https://tor.stackexchange.com/questions/22131/openvpn-over-tor">https://tor.stackexchange.com/questions/22131/openvpn-over-tor</a>.</p>
+
+  </div>
+
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "94e45ea74d58413395c468ebe6bab324"}'></script><!-- End Cloudflare Web Analytics -->
+  
+</body>
+
+</html>
+
+

@@ -1,0 +1,14 @@
+/Users/macbookair/p/dotnet/HelloWorldApp/bin/Debug/net8.0/HelloWorldApp
+/Users/macbookair/p/dotnet/HelloWorldApp/bin/Debug/net8.0/HelloWorldApp.deps.json
+/Users/macbookair/p/dotnet/HelloWorldApp/bin/Debug/net8.0/HelloWorldApp.runtimeconfig.json
+/Users/macbookair/p/dotnet/HelloWorldApp/bin/Debug/net8.0/HelloWorldApp.dll
+/Users/macbookair/p/dotnet/HelloWorldApp/bin/Debug/net8.0/HelloWorldApp.pdb
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.AssemblyInfoInputs.cache
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.AssemblyInfo.cs
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.csproj.CoreCompileInputs.cache
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.dll
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/refint/HelloWorldApp.dll
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.pdb
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/HelloWorldApp.genruntimeconfig.cache
+/Users/macbookair/p/dotnet/HelloWorldApp/obj/Debug/net8.0/ref/HelloWorldApp.dll

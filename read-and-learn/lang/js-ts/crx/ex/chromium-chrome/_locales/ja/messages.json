@@ -1,0 +1,2206 @@
+{
+  "appName": {
+    "message": "Glarity-ChatGPT4で要約と翻訳、YouTube対応(無料広告なし)"
+  },
+  "appDesc": {
+    "message": "YouTube動画やウェブページを要約し、ChatGPTを使ってテキストを翻訳します。あなたの母国語で読み書きを手助けします、すべて無料です"
+  },
+  "option": {
+    "message": "オプション"
+  },
+  "trigger_mode": {
+    "message": "トリガーモード"
+  },
+  "always": {
+    "message": "自動"
+  },
+  "always_tip": {
+    "message": "AIは自動的に検索やYouTube動画の要約を生成します"
+  },
+  "manually": {
+    "message": "手動で"
+  },
+  "manually_tip": {
+    "message": "[要約生成]ボタンを手動でクリックすると、AIがコンテンツの要約を作成します。"
+  },
+  "language": {
+    "message": "言語"
+  },
+  "language_tip": {
+    "message": "AIの応答で使用される言語。自動推定が推奨されています"
+  },
+  "aiprovider": {
+    "message": "AIプロバイダー"
+  },
+  "gpt3_5tip": {
+    "message": "GPT-3.5は無料およびプラスユーザー向けの制限なしです"
+  },
+  "gpt4_tip": {
+    "message": "GPT-4はプラスユーザー向けで非常に限られた割り当てです"
+  },
+  "open_ai_tip": {
+    "message": "オープンAI公式API、より安定しており、使用量に応じた課金があります"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "customize_prompt": {
+    "message": "カスタム要約"
+  },
+  "use_default": {
+    "message": "デフォルトを使用"
+  },
+  "enable_disable_glarity": {
+    "message": "Glarityの有効化/無効化"
+  },
+  "enable_disable_tip": {
+    "message": "以下のウェブサイトでGlarityの要約を有効化または無効化できます"
+  },
+  "select_all": {
+    "message": "全選択/逆選択"
+  },
+  "page_summary": {
+    "message": "ページの要約"
+  },
+  "show_icon": {
+    "message": "Glarityアイコンの表示"
+  },
+  "disable_icon": {
+    "message": "Glarityアイコンの非表示"
+  },
+  "show_icon_tip": {
+    "message": "非表示にすると、ページにGlarityアイコンが表示されなくなります。ただし、ブラウザ拡張機能のアイコンをクリックすることでページの要約を表示することができます"
+  },
+  "whitelist_sites": {
+    "message": "ホワイトリストサイト"
+  },
+  "whitelist_sites_tip": {
+    "message": "これらのサイト（1つのURLご要にホワイトリストに登録されているサイトのみ、Glarityアイコンを表示します（1行に1つのURL）。"
+  },
+  "blacklist_sites": {
+    "message": "ブラックリストサイト"
+  },
+  "blacklist_sites_tip": {
+    "message": "これらのサイトにはGlarityアイコンを表示しません（1行に1つのURL）。"
+  },
+  "login_tip": {
+    "message": "{{site}}でログインし、Cloudflareのチェックをパスしてください"
+  },
+  "summary": {
+    "message": "要約"
+  },
+  "create_tweet": {
+    "message": "ツイートを作成"
+  },
+  "explain": {
+    "message": "説明"
+  },
+  "translation": {
+    "message": "翻訳"
+  },
+  "q_and_a": {
+    "message": "質問と回答"
+  },
+  "important": {
+    "message": "重要"
+  },
+  "theme": {
+    "message": "テーマ"
+  },
+  "auto": {
+    "message": "自動"
+  },
+  "light": {
+    "message": "ライト"
+  },
+  "dark": {
+    "message": "ダーク"
+  },
+  "example_prompts": {
+    "message": "例のプロンプト："
+  },
+  "summarize_above": {
+    "message": "上記のコンテンツのハイライトを要約"
+  },
+  "extract_gist": {
+    "message": "上記の要点を抽出"
+  },
+  "what_above": {
+    "message": "上記からの主要なポイントは何ですか？"
+  },
+  "comment_summary": {
+    "message": "コメントの要約"
+  },
+  "summary_support": {
+    "message": "Amazon製品とYouTubeビデオのコメントのサポートの要約"
+  },
+  "option_general": {
+    "message": "一般"
+  },
+  "popup_summary": {
+    "message": "ポップアップ要約"
+  },
+  "popup_summary_title": {
+    "message": "単語やフレーズを選択した場合："
+  },
+  "popup_summary_tip": {
+    "message": "クリックしてポップアップを表示するアイコンを表示します"
+  },
+  "disable_popup_summary": {
+    "message": "アイコンやポップアップを表示しない"
+  },
+  "summary_full_title": {
+    "message": "フルコンテンツの要約"
+  },
+  "summary_full": {
+    "message": "フルコンテンツの要約ですが、キーの割り当てをより多く消費します"
+  },
+  "summary_brief": {
+    "message": "簡潔な要約：トークン数を減らしますが、要約に欠落が生じる可能性があります"
+  },
+  "here": {
+    "message": "こちら"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "ask": {
+    "message": "質問"
+  },
+  "generating": {
+    "message": "生成中..."
+  },
+  "thinking": {
+    "message": "考え中..."
+  },
+  "no_transcription": {
+    "message": "転写は利用できません..."
+  },
+  "use_openai_tip": {
+    "message": "注意：OpenAI APIキーのパターンを使用すると、より正確な回答が得られます"
+  },
+  "no_results": {
+    "message": "結果はありません。"
+  },
+  "i_ready": {
+    "message": "準備完了です！"
+  },
+  "keep_this_tip": {
+    "message": "ChatGPTをより安定させるために、このタブを開いたままにしておいてください"
+  },
+  "login_chatGpt_tip": {
+    "message": "Glarity要約を使用するには、ChatGPTのWebアプリにログインしてください"
+  },
+  "disable_pop_tip": {
+    "message": "本当にポップアップ要約を無効にしますか？"
+  },
+  "page_not_supported": {
+    "message": "申し訳ありませんが、このページはサポートされていません。"
+  },
+  "content": {
+    "message": "コンテンツ"
+  },
+  "ask_chatGPT": {
+    "message": "ワンクリック要約作成"
+  },
+  "pop_tip": {
+    "message": "オプションのポップアップ要約でオンにできます"
+  },
+  "asking_tip": {
+    "message": "Glarityは、キーワードに関連する質問を生成しています"
+  },
+  "data_error": {
+    "message": "データエラー"
+  },
+  "gpt_401": {
+    "message": "応答の読み込みに失敗しました。APIキーを確認してください。"
+  },
+  "chat_tip": {
+    "message": "注：追加の質問機能はAPIの割り当てをより多く消費します"
+  },
+  "three_point": {
+    "message": "3つの要点"
+  },
+  "ask_page_placeholder": {
+    "message": "Glarityに何でも聞いてください"
+  },
+  "ask_video_placeholder": {
+    "message": "Glarityに何でも聞いてください"
+  },
+  "ask_docment_placeholder": {
+    "message": "Glarityに何でも聞いてください"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "comment_summary_tip": {
+    "message": "Amazon製品とYouTubeビデオのコメントのサポートの概要"
+  },
+  "faq_about": {
+    "message": "現在のビデオについて尋ねる"
+  },
+  "ai_chapter": {
+    "message": "キーモーメント"
+  },
+  "beta": {
+    "message": "ベータ版"
+  },
+  "how_to_use": {
+    "message": "AIを接続して、迅速なGlarityの要約と翻訳を利用しましょう"
+  },
+  "three_ways_to_access": {
+    "message": "言語横断の読書アシスタントGlarityは、AIサービスに接続する6つの方法を提供します。ご自身のニーズに最適な方法を選んで、AIプロバイダーとリンクしてください。"
+  },
+  "have_chatgpt_account": {
+    "message": "ChatGPTアカウントをお持ちの場合"
+  },
+  "chatgpt_use_desc": {
+    "message": "ウェブサイト上のChatGPTアカウントにログインしたままにする必要があります。OpenAIの制限により、Plusユーザーと無料ユーザーの両方で安定性が一貫していない場合があります。ChatGPT Plusユーザーにおすすめです。"
+  },
+  "have_openai_key": {
+    "message": "APIキーをお持ちの開発者の方へ"
+  },
+  "openai_use_desc": {
+    "message": "公式のOpenAI APIはより安定しており、料金は使用状況に基づいています。APIキーを取得するためのガイドに従ってください。"
+  },
+  "have_azure_key": {
+    "message": "Azure APIキーをお持ちの開発者の方へ"
+  },
+  "azure_use_desc": {
+    "message": "Azure OpenAIサービスを利用する研究開発エンジニアは、より安定したサービスを利用できます。"
+  },
+  "more_ways": {
+    "message": "その他の方法+"
+  },
+  "chatgpt_default_model": {
+    "message": "デフォルト"
+  },
+  "chatgpt_default_desc": {
+    "message": "デフォルトは無料およびPlusユーザーに対して制限なしです。"
+  },
+  "chatgpt_gpt4_model": {
+    "message": "GPT-4"
+  },
+  "chatgpt_gpt4_desc": {
+    "message": "GPT-4はPlusユーザー向けで、非常に限られたクオータを持っています。"
+  },
+  "changes_saved": {
+    "message": "変更が保存されました"
+  },
+  "token_exceeds_limit_toast": {
+    "message": "申し訳ありませんが、プロンプトが制限を超えています。英語に翻訳して保存するか、単語数を減らしてください。"
+  },
+  "guide_title": {
+    "message": "Glarityへようこそ"
+  },
+  "guide_desc": {
+    "message": "Glarityサマリーの効率的な読書を始めましょう~~"
+  },
+  "google_search": {
+    "message": "Google検索"
+  },
+  "youtube_video": {
+    "message": "YouTubeビデオ"
+  },
+  "translation_languages": {
+    "message": "翻訳言語"
+  },
+  "recently_used": {
+    "message": "最近使用した"
+  },
+  "copy_success": {
+    "message": "コピーに成功しました"
+  },
+  "free_queries": {
+    "message": "$count$回の無料クエリ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "enter_openai_key_toast": {
+    "message": "OpenAIのAPIキーを入力してください"
+  },
+  "free_quota_exhausted": {
+    "message": "無料クオータが使い果たされました"
+  },
+  "login_chatgpt_and_refresh_page": {
+    "message": "$ai$ にログインし、このページをリフレッシュしてください",
+    "placeholders": {
+      "ai": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "goto_chatgpt": {
+    "message": "$ai$ に移動する",
+    "placeholders": {
+      "ai": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "use_openai_enhanced": {
+    "message": "強化された要約結果にOpenAI APIキーを使用する"
+  },
+  "find_create_openai_key": {
+    "message": "ここでAPIキーを見つけるか作成できます"
+  },
+  "change_openai_api": {
+    "message": "これが続く場合は、拡張オプションでAlプロバイダをOpenAl APIに変更してください。"
+  },
+  "goto_options": {
+    "message": "オプションを編集する"
+  },
+  "ai_not_responding": {
+    "message": "AIが応答していません"
+  },
+  "select_valid_model": {
+    "message": "有効なモデルを選択してください"
+  },
+  "enter_azure_key": {
+    "message": "AzureのAPIキーを入力してください"
+  },
+  "enter_azure_endpoint": {
+    "message": "Azureのエンドポイントを入力してください"
+  },
+  "enter_azure_name": {
+    "message": "Azureの展開名を入力してください"
+  },
+  "enter_claude_key": {
+    "message": "ClaudeのAPIキーを入力してください"
+  },
+  "transcript": {
+    "message": "ビデオの字幕"
+  },
+  "or": {
+    "message": "また"
+  },
+  "back": {
+    "message": "戻る"
+  },
+  "aiAskYoutubeTip": {
+    "message": "Glarityは、あなたが興味を持つかもしれない質問を予測しています"
+  },
+  "clickOpen": {
+    "message": "クリックして展開"
+  },
+  "clickClose": {
+    "message": "クリックして閉じる"
+  },
+  "tips": {
+    "message": "ヒント"
+  },
+  "confirm": {
+    "message": "確認する"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "have_glarity": {
+    "message": "全てのユーザーに推奨"
+  },
+  "glarity_use_desc": {
+    "message": "Glarityは複数のAIモデルを用いて、高度なAI支援サービスを提供しています。"
+  },
+  "glarity_not_use_desc": {
+    "message": "Glarityは多種多様なAIモデルを活用し、高度なAI支援サービスをご提供します。毎月無料で$size$個のトークンを楽しめ、全ての人々にAIの力を。<br/> <a href='$link$' target='_blank' rel='noopener noreferrer'>$plan$にアップグレード </a>して、より多くのトークンとプレミアム機能を手に入れましょう。",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      },
+      "plan": {
+        "content": "$2",
+        "example": "プロ"
+      },
+      "link": {
+        "content": "$3",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "my_account": {
+    "message": "マイアカウント"
+  },
+  "sign_out": {
+    "message": "ログアウト"
+  },
+  "sign_in": {
+    "message": "ログイン"
+  },
+  "upgrade_now": {
+    "message": "今すぐアップグレード"
+  },
+  "go_plus": {
+    "message": "ゴープラス"
+  },
+  "basic": {
+    "message": "Basic"
+  },
+  "pro": {
+    "message": "Pro"
+  },
+  "plus": {
+    "message": "Plus"
+  },
+  "unlimited": {
+    "message": "無制限"
+  },
+  "glarity_words_size": {
+    "message": "使用可能なトークン: $size$ k",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "glarity_unlimited_words": {
+    "message": "無限のトークン"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "support": {
+    "message": "サポート"
+  },
+  "login": {
+    "message": "ログイン"
+  },
+  "log_out": {
+    "message": "ログアウト"
+  },
+  "subscribe": {
+    "message": "購読"
+  },
+  "hasLogin_isFree_title": {
+    "message": "無料プランの使用量が使い果たされました"
+  },
+  "hasLogin_isFree_text": {
+    "message": "追加のクレジットを得るためにプランをアップグレードしてください"
+  },
+  "hasLogin_noFree_title": {
+    "message": "お使いのプランの使用量が全て使い切られました"
+  },
+  "hasLogin_noFree_text": {
+    "message": "プランをアップグレードして無制限のサービスをお楽しみください"
+  },
+  "noLogin_title": {
+    "message": "無料枠が使い果たされました"
+  },
+  "noLogin_text": {
+    "message": "Glarityを無料で続けるためにログインしてください"
+  },
+  "chat_quota_used_up_not_login": {
+    "message": "プランの使用量上限が使い切りました。<br /><a href='$link$'>ログインして</a> Glarityを無料で続けてください",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "chat_quota_used_up_free_plan": {
+    "message": "無料プランの使用量が使い果たされました。<br /><a href='$link$'>プランをアップグレード</a>して無制限枠を享受してください",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "chat_quota_used_up_limited_plan": {
+    "message": "プランの使用量が使い果たされました。<br /><a href='$link$'>プランをアップグレード</a>して無制限枠を享受してください",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "more": {
+    "message": "もっと"
+  },
+  "is_login_expires_text": {
+    "message": "Glarityにログインして始めましょう！"
+  },
+  "is_login_expires_tip": {
+    "message": "<a id='glarity-error-guide-to-options'>ChatGPTモードに切り替えて、無料で継続してご利用ください</a>"
+  },
+  "sign_in_now": {
+    "message": "いますぐログインする"
+  },
+  "lone_text_tip": {
+    "message": "'高度なAIによってパワードされた、向上した要約を提供するために、「Glarity」モードに切り替えてください."
+  },
+  "ai_chapter_lone_text_tip": {
+    "message": "切り替えて、「Glarity」モードで、動画の重要な瞬間をもっとご覧ください。"
+  },
+  "welcom_title": {
+    "message": "👋 Glarityへようこそ!"
+  },
+  "welcom_happy": {
+    "message": "私たちの仲間入りをしていただき、ありがとうございます！"
+  },
+  "welcom_text": {
+    "message": "Glarityは、GPTを使用してウェブページを効率的に要約し、翻訳するブラウザ拡張機能です。さらに、YouTubeの動画を言語を超えて要約することもサポートしています。今すぐ体験をはじめてみてください。"
+  },
+  "start_now": {
+    "message": "今すぐ体験"
+  },
+  "current_plan": {
+    "message": "現在のプラン"
+  },
+  "fell_text": {
+    "message": "クレジットが足りない感じですか？"
+  },
+  "glartiy_trial": {
+    "message": "Glarity試用中"
+  },
+  "view_billing": {
+    "message": "請求詳細を見る"
+  },
+  "tokens_size": {
+    "message": "$size$ トークン",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0/0"
+      }
+    }
+  },
+  "plan_basic_planText": {
+    "message": "GPTリーディング：$size$K トークン/ 月",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "plan_pro_tip": {
+    "message": "ほとんどの人が選ぶプラン"
+  },
+  "plan_pro_planText0": {
+    "message": "GPTリーディング：$size$K トークン/ 月",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "plan_pro_planText1": {
+    "message": "迅速なカスタマーサポート"
+  },
+  "plan_pro_planText2": {
+    "message": "すべてのPro機能を使用可能"
+  },
+  "plan_pro_funcList0": {
+    "message": "スマート検索"
+  },
+  "plan_pro_funcList1": {
+    "message": "サーチサマリー"
+  },
+  "plan_pro_funcList2": {
+    "message": "YouTubeサマリー"
+  },
+  "plan_pro_funcList3": {
+    "message": "PDFサマリー"
+  },
+  "plan_pro_funcList4": {
+    "message": "キーモーメント"
+  },
+  "plan_pro_funcList5": {
+    "message": "Glarityに質問"
+  },
+  "plan_plus_tip": {
+    "message": "プロフェッショナルな人々のために"
+  },
+  "plan_plus_planText0": {
+    "message": "GPTリーディング：無制限のトークン"
+  },
+  "plan_plus_planText2": {
+    "message": "すべてのPlus機能を使用可能"
+  },
+  "plan_pro": {
+    "message": "Glarity Pro"
+  },
+  "plan_plus": {
+    "message": "Glarity Plus"
+  },
+  "billing_basic": {
+    "message": "Glarity Basic"
+  },
+  "billing_hot": {
+    "message": "🔥 人気"
+  },
+  "money_month": {
+    "message": "$money$円<span>/月</span>",
+    "placeholders": {
+      "money": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "subscribe_pricing_tip": {
+    "message": "Glarityが提供する具体的なサービスについては、<a href='$link$' target='_blank'>料金表</a>をご覧ください。",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "unlimited_amount": {
+    "message": "無制限"
+  },
+  "usage": {
+    "message": "残量/総量"
+  },
+  "sign_in_glarity": {
+    "message": "Glarityモードの無料サービスを引き続きご利用いただくためには、<a href='$link$' target='_blank'> ログイン </a>が必要です。",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "reset_day": {
+    "message": "$day$日後にリセット",
+    "placeholders": {
+      "day": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "mail_reply": {
+    "message": "メールの返信とサマリー"
+  },
+  "mail_reply_language": {
+    "message": "返信メールの言語"
+  },
+  "mail_reply_language_tip": {
+    "message": "高速返信メールコンテンツ作成時に適用されます。'自動'設定は、元のメールの言語に一致します。"
+  },
+  "mail_reply_tone": {
+    "message": "返信メールのトーン"
+  },
+  "mail_reply_tone_tip": {
+    "message": "生成されたメールのトーンに適用されます。"
+  },
+  "mail_reply_button": {
+    "message": "迅速なメールの返信"
+  },
+  "mail_reply_button_tip": {
+    "message": "メールの内容を見るとき："
+  },
+  "mail_reply_button_display": {
+    "message": "メールページに'クイックリプライ'ボタンを表示(現在、GmailおよびZohoメールに対応しています)"
+  },
+  "mail_reply_button_none": {
+    "message": "メールページに'クイックリプライ'ボタンを非表示"
+  },
+  "Formal": {
+    "message": "形式ばった"
+  },
+  "Personable": {
+    "message": "人懐っこい"
+  },
+  "Natural": {
+    "message": "自然"
+  },
+  "Engaging": {
+    "message": "魅力的"
+  },
+  "Direct": {
+    "message": "直接"
+  },
+  "mail_sender_intent": {
+    "message": "送信者の意図"
+  },
+  "mail_ideas_of_reply": {
+    "message": "返信の提案"
+  },
+  "generate": {
+    "message": "生成する"
+  },
+  "mail_textarea_tip": {
+    "message": "書きたい内容を入力してください"
+  },
+  "insert": {
+    "message": "挿入"
+  },
+  "rephrase": {
+    "message": "書き換える"
+  },
+  "copy": {
+    "message": "コピー"
+  },
+  "security_statement": {
+    "message": "ご安心ください、私たちの製品は最新のインターネットセキュリティ対策を強化し、お客様のメールの安全を最優先にしています。"
+  },
+  "time_line": {
+    "message": "タイムライン"
+  },
+  "timeline_loading": {
+    "message": "タイムラインを読み込み中..."
+  },
+  "response_loading": {
+    "message": "返信提案をロード中"
+  },
+  "guide_to_glarity_mode": {
+    "message": "問題が解決しない場合は、<a id='glarity-error-guide-to-options'>Glarityモード</a>への切り替えをお勧めします（より速く、より安定）"
+  },
+  "context_menu_translate": {
+    "message": "ウェブページを翻訳/元のページを表示"
+  },
+  "option_translate": {
+    "message": "翻訳"
+  },
+  "option_translate_target_language": {
+    "message": "目標言語"
+  },
+  "option_translate_target_language_desc": {
+    "message": "他の言語を設定した言語に翻訳します。"
+  },
+  "option_translate_white_list": {
+    "message": "常に以下のウェブサイトを翻訳する"
+  },
+  "option_translate_white_list_desc": {
+    "message": "以下のウェブサイトは常に翻訳されます"
+  },
+  "option_translate_black_list": {
+    "message": "以下のウェブサイトを翻訳しない"
+  },
+  "option_translate_black_list_desc": {
+    "message": "ここにリストされたウェブサイトは自動翻訳されません。"
+  },
+  "option_translate_list_tip": {
+    "message": "ドメイン名を入力してください。ワイルドカードが利用可能です。1行に1つのドメイン名を入力します。<br/> 例えば：*.google.com, google.com/mail/*, https://www.google.com/*"
+  },
+  "option_translate_icon": {
+    "message": "翻訳アイコン"
+  },
+  "option_translate_icon_desc": {
+    "message": "このオプションを選択すると、'翻訳'アイコンが表示されます。翻訳アイコンをクリックすると、現在閲覧しているページの翻訳が開始されます。"
+  },
+  "option_translate_icon_auto_display": {
+    "message": "ページ上に自動的に翻訳アイコンを表示"
+  },
+  "option_translate_icon_auto_display_desc": {
+    "message": "現在のページの言語が目標の言語と異なる場合、翻訳アイコンが自動的に表示されます。"
+  },
+  "option_translate_icon_always_display": {
+    "message": "常にページ上に翻訳アイコンを表示"
+  },
+  "option_translate_icon_never_display": {
+    "message": "翻訳アイコンを非表示"
+  },
+  "option_translate_context_menu": {
+    "message": "右クリックメニューを作成"
+  },
+  "option_translate_context_menu_desc": {
+    "message": "有効にすると、ブラウザの右クリックメニューに翻訳または原文を表示するショートカットが追加されます。"
+  },
+  "option_translate_context_menu_enabled": {
+    "message": "有効"
+  },
+  "option_translate_context_menu_disabled": {
+    "message": "無効"
+  },
+  "retry_translate_tip": {
+    "message": "すべてのエラーパラグラフの翻訳を再試行"
+  },
+  "no_translation_error_tip": {
+    "message": "GPTは翻訳内容を返さなかったので、もう一度翻訳を試してください"
+  },
+  "quick_reply": {
+    "message": "クイックリプライ"
+  },
+  "that_is_the_one": {
+    "message": "それがそれです"
+  },
+  "option_translate_concurrency": {
+    "message": "秒間最大リクエスト数"
+  },
+  "option_translate_target_language_same_as_glarity": {
+    "message": "Glarityの出力言語と同じ"
+  },
+  "option_translate_target_language_select": {
+    "message": "目標言語を選択"
+  },
+  "translation_placeholder": {
+    "message": "言語を選択"
+  },
+  "translate_it": {
+    "message": "に翻訳"
+  },
+  "icon_tooltip_summarize": {
+    "message": "要約を生成する"
+  },
+  "icon_tooltip_translate": {
+    "message": "翻訳"
+  },
+  "icon_tooltip_translate_cancel": {
+    "message": "翻訳をキャンセル"
+  },
+  "discover_news_highlights": {
+    "message": "ニュースのハイライトを見つけてみて〜"
+  },
+  "check_it_out": {
+    "message": "見てみましょう"
+  },
+  "chatgpt_plugin": {
+    "message": "ChatGPT プラグイン"
+  },
+  "table_features": {
+    "message": "機能"
+  },
+  "table_glarity": {
+    "message": "Glarityメンバーシップ"
+  },
+  "table_chatgpt": {
+    "message": "ChatGPT（モード）"
+  },
+  "table_features_youtube": {
+    "message": "YouTube動画サマリー"
+  },
+  "table_features_key": {
+    "message": "YouTube動画のキーポイント"
+  },
+  "table_features_ask": {
+    "message": "YouTube動画に質問"
+  },
+  "table_features_summary": {
+    "message": "動画サマリー"
+  },
+  "table_features_twitter": {
+    "message": "Twitterサマリー"
+  },
+  "table_features_smart": {
+    "message": "スマート検索"
+  },
+  "table_features_anyPage": {
+    "message": "任意のページのサマリー"
+  },
+  "table_features_translation": {
+    "message": "ミラーロケーション翻訳"
+  },
+  "table_features_pdf": {
+    "message": "PDFサマリー"
+  },
+  "table_features_email": {
+    "message": "迅速なメール返信"
+  },
+  "table_features_qa": {
+    "message": "質問応答最適化"
+  },
+  "table_features_agent": {
+    "message": "人工知能エージェント"
+  },
+  "differenceTable_title": {
+    "message": "Glarity と ChatGPTの違い"
+  },
+  "differenceTable_title_tip": {
+    "message": "（制限のあるChatGPTに比べ、Glarityはより高品質なサービスを提供します。比較はChatGPTのデフォルトモデルGPT-3.5/4Kトークンに基づいています。)"
+  },
+  "table_title_youtube": {
+    "message": "YouTube動画強化"
+  },
+  "table_title_website": {
+    "message": "カスタムウェブサイト強化"
+  },
+  "table_title_widget": {
+    "message": "ウィジェット"
+  },
+  "unlimited_duration": {
+    "message": "無制限の時間"
+  },
+  "limited_duration": {
+    "message": "4Kトークンの制限（約30分）"
+  },
+  "unlimited_summary": {
+    "message": "全文サマリー"
+  },
+  "limited_summary": {
+    "message": "最大4K文字トークンのサマリーのみサポート"
+  },
+  "unlimited_search_summary": {
+    "message": "幅広いソース検索"
+  },
+  "limited_search_summary": {
+    "message": "最大4K文字トークンのデータのみサポート"
+  },
+  "unlimited_side_summary": {
+    "message": "秒間最大10の並列翻訳をサポート"
+  },
+  "limited_side_summary": {
+    "message": "1つの翻訳ストリームのみサポート"
+  },
+  "unlimited_pdf_summary": {
+    "message": "最大約300ページのPDFサポート"
+  },
+  "limited_pdf_summary": {
+    "message": "最大4ページのPDFサポート"
+  },
+  "unlimited_email_summary": {
+    "message": "包括的なプライバシー保護を確保"
+  },
+  "limited_email_summary": {
+    "message": "ChatGPTポリシーを遵守"
+  },
+  "unlimited_qa_summary": {
+    "message": "質問の長さに制限なし"
+  },
+  "limited_qa_summary": {
+    "message": "最大4K文字トークンの質問のみサポート"
+  },
+  "unlimited_agent": {
+    "message": "フルサービス提供"
+  },
+  "limited_agent": {
+    "message": "限られたサービス提供"
+  },
+  "table_features_news": {
+    "message": "ニュース概要"
+  },
+  "Format": {
+    "message": "形式"
+  },
+  "Auto": {
+    "message": "自動"
+  },
+  "Email": {
+    "message": "メール"
+  },
+  "News": {
+    "message": "ニュース"
+  },
+  "Paragraph": {
+    "message": "段落"
+  },
+  "Blog_Post": {
+    "message": "ブログ投稿"
+  },
+  "Twitter": {
+    "message": "Twitter"
+  },
+  "Line_Voom": {
+    "message": "ライン ヴーム"
+  },
+  "Tone": {
+    "message": "トーン"
+  },
+  "Tone_Auto": {
+    "message": "🤔 自動"
+  },
+  "Tone_Formal": {
+    "message": "🙂 正式"
+  },
+  "Professional": {
+    "message": "🧐 プロフェッショナル"
+  },
+  "Friendly": {
+    "message": "😊 友好"
+  },
+  "Funny": {
+    "message": "😀 面白い"
+  },
+  "Length": {
+    "message": "長さ"
+  },
+  "Short": {
+    "message": "短い"
+  },
+  "Medium": {
+    "message": "中等"
+  },
+  "Long": {
+    "message": "長い"
+  },
+  "Compose_welcome_title": {
+    "message": "Glarity Copilotがドラフトを作成"
+  },
+  "Compose_welcome_subtitle": {
+    "message": "書きたい内容を記載し、AIが草案を生成します"
+  },
+  "Compose_more_parameters": {
+    "message": "パラメータをもっと"
+  },
+  "Add": {
+    "message": "追加"
+  },
+  "Try_again": {
+    "message": "再生成"
+  },
+  "Chat": {
+    "message": "チャット"
+  },
+  "Compose": {
+    "message": "作成する"
+  },
+  "Compose_input_placeholder": {
+    "message": "変更したい内容を詳しく記載してください"
+  },
+  "Tell_AI_to": {
+    "message": "AIに依頼する…"
+  },
+  "Make_Longer": {
+    "message": "長くする"
+  },
+  "Make_Shorter": {
+    "message": "短くする"
+  },
+  "Change_tone_to": {
+    "message": "トーンを変更する..."
+  },
+  "Review_suggested": {
+    "message": "ドラフトを確認する"
+  },
+  "chat_placeholder": {
+    "message": "現在のページについて質問"
+  },
+  "usage_reached": {
+    "message": "プランの利用上限に達しました。Glarityにログインして無料体験を続けてください。"
+  },
+  "reminder": {
+    "message": "リマインダー"
+  },
+  "usage_used": {
+    "message": "プランの利用制限が超えました。プランをアップグレードして追加の制限を獲得してください。"
+  },
+  "loading": {
+    "message": "読み込み中"
+  },
+  "page_summary_text": {
+    "message": "ページの摘要を作成中"
+  },
+  "search_summary": {
+    "message": "検索のサマリー"
+  },
+  "search_summary_text": {
+    "message": "検索のサマリーを作成中"
+  },
+  "create_qa": {
+    "message": "質疑応答を作成"
+  },
+  "create_qa_text": {
+    "message": "関連質問を生成中"
+  },
+  "create_twitter": {
+    "message": "Twitterの投稿を作成する"
+  },
+  "page_summary_action": {
+    "message": "現在のページを要約"
+  },
+  "page_comment": {
+    "message": "ページコメント"
+  },
+  "page_comment_text": {
+    "message": "現在の評価を要約"
+  },
+  "page_video": {
+    "message": "ビデオの要約"
+  },
+  "page_video_text": {
+    "message": "現在のビデオ内容を要約"
+  },
+  "page_article": {
+    "message": "記事の要約"
+  },
+  "page_article_text": {
+    "message": "要約の作成中"
+  },
+  "create_ai_ask": {
+    "message": "関連する質問を作成"
+  },
+  "Compose_input_placeholder_write": {
+    "message": "AIに何を書くべきか教えて"
+  },
+  "Quote_Page": {
+    "message": "このページを引用"
+  },
+  "Quote_Page_Tip": {
+    "message": "有効にした後、文章作成時に現在のページの内容を参考に引用することができます"
+  },
+  "error_glarity_normal_tip": {
+    "message": "\uD83D\uDC69\u200D\uD83D\uDCBC ヘルプが必要ですか？いつでも<a href='mailto:support@sparticle.com'>support@sparticle.com</a>でGlarityのカスタマーサービスにご連絡ください"
+  },
+  "error_guide_to_chatgpt_mode": {
+    "message": "\uD83D\uDC49 ChatGPTモードに切り替えて無料で続けてご利用いただけます"
+  },
+  "error_guide_to_glarity_mode": {
+    "message": "\uD83D\uDC49 Glarityモードに切り替えて、より速く、より安定したサービスを享受しましょう"
+  },
+  "error_guide_to_google_mode": {
+    "message": "\uD83D\uDC49 翻訳エンジンをGoogle翻訳サービスに変更します"
+  },
+  "error_guide_to_llm_mode": {
+    "message": "\uD83D\uDC49 翻訳エンジンをLLM-AIサービスに切り替えます"
+  },
+  "error_chatgpt_429_title": {
+    "message": "ChatGPTサービスは一時的に利用できません"
+  },
+  "error_chatgpt_429_desc": {
+    "message": "Google翻訳が翻訳サービスを提供し、ChatGPTが復帰すると自動的に切り替えます"
+  },
+  "error_google_title": {
+    "message": "Google翻訳サービスへの応答がありません"
+  },
+  "option_translate_service_title": {
+    "message": "翻訳サービス"
+  },
+  "option_translate_service_desc": {
+    "message": "翻訳エンジンを選択"
+  },
+  "option_translate_service_llm_title": {
+    "message": "デフォルトのLLM-AIエンジンを使用（より長いテキストでより高品質な翻訳を得る）"
+  },
+  "option_translate_service_llm_desc": {
+    "message": "例えば、OpenAI API\\Glarity Mode（LLM-AIが翻訳サービスを提供できない場合、自動的にGoogle翻訳が起動します）"
+  },
+  "option_translate_service_google_title": {
+    "message": "Google翻訳"
+  },
+  "option_translate_service_google_desc": {
+    "message": "より高速で、トークンを消費しない"
+  },
+  "global_search_title": {
+    "message": "Glarity グローバル検索：$keyword$",
+    "placeholders": {
+      "keyword": {
+        "content": "$1",
+        "example": "キーワード"
+      }
+    }
+  },
+  "global_search_translated": {
+    "message": "英語の結果：$keyword$...",
+    "placeholders": {
+      "keyword": {
+        "content": "$1",
+        "example": "キーワード"
+      }
+    }
+  },
+  "option_global_search_title": {
+    "message": "グローバル検索"
+  },
+  "option_global_search_desc": {
+    "message": "Googleでキーワードを検索する際、英語版の検索推奨を提供します"
+  },
+  "option_global_search_enable": {
+    "message": "Googleでのグローバル検索を有効にする"
+  },
+  "option_global_search_disable": {
+    "message": "Googleでのグローバル検索を無効にする"
+  },
+  "disable_global_search_title": {
+    "message": "グローバル検索を無効にしてもよろしいですか？"
+  },
+  "disable_global_search_temporary": {
+    "message": "次回訪問まで無効"
+  },
+  "disable_global_search_global": {
+    "message": "永久に無効"
+  },
+  "disable_global_search_enable_tip": {
+    "message": "*オプションで再度有効にすることができます"
+  },
+  "hide_global_search_header": {
+    "message": "翻訳を非表示"
+  },
+  "show_global_search_header": {
+    "message": "翻訳を表示"
+  },
+  "global_search_header_search_language": {
+    "message": "検索言語"
+  },
+  "global_search_header_search_language_detect": {
+    "message": "言語を検出"
+  },
+  "search_term_matching_analysis": {
+    "message": "キーワードマッチング分析"
+  },
+  "global_search_new_title": {
+    "message": "英語で答えを探す"
+  },
+  "Youtube_Summarizer": {
+    "message": "YouTubeサマリーを体験"
+  },
+  "Google_Summarizer": {
+    "message": "Google検索サマリーを体験"
+  },
+  "Glarity_on_Twitter": {
+    "message": "Twitterサマリーを体験"
+  },
+  "Glarity_on_Gmail": {
+    "message": "Gmailサマリーガイドをご覧ください"
+  },
+  "PDF_Summarizer": {
+    "message": "PDFサマリーガイドをご覧ください"
+  },
+  "WebChat_by_Glarity_AI": {
+    "message": "ウェブページでチャット"
+  },
+  "Translate_Page_by_Glarity_AI": {
+    "message": "翻訳ガイドをご覧ください"
+  },
+  "option_translate_service_bing_title": {
+    "message": "マイクロソフト翻訳"
+  },
+  "option_translate_service_bing_desc": {
+    "message": "高速でトークン使用無し"
+  },
+  "error_bing_title": {
+    "message": "マイクロソフト翻訳サービスが応答していません"
+  },
+  "error_guide_to_bing_mode": {
+    "message": "\uD83D\uDC49 翻訳エンジンをMicrosoft Translateサービスに切り替えてください"
+  },
+  "one_click_prompt_max": {
+    "message": "1クリックプロンプトは最大5つまでピン止めできます"
+  },
+  "one_click_prompt_min": {
+    "message": "1クリックプロンプトは少なくとも1つピン止めする必要があります"
+  },
+  "one_click_prompt_again": {
+    "message": "1クリックプロンプトの名前は重複できません"
+  },
+  "one_click_prompt_delete_tip": {
+    "message": "これは最後の指示です、削除しないでください"
+  },
+  "one_click_prompt_title": {
+    "message": "簡単な閲覧のための1クリックプロンプトアイコン"
+  },
+  "one_click_prompt_title_tip": {
+    "message": "テキストを選択するとアイコンが表示されます"
+  },
+  "one_click_prompt_list": {
+    "message": "1クリックプロンプトのリスト"
+  },
+  "one_click_prompt_list_tip": {
+    "message": "1クリックプロンプトを編集またはピン止めする"
+  },
+  "one_click_prompt_add": {
+    "message": "新たな1クリックプロンプトを追加する"
+  },
+  "one_click_prompt_add_title": {
+    "message": "1クリックプロンプト設定：新たな1クリックプロンプトを追加する"
+  },
+  "one_click_prompt_edit": {
+    "message": "1クリックプロンプトを編集する"
+  },
+  "one_click_prompt_icon": {
+    "message": "1クリックプロンプトのアイコン"
+  },
+  "one_click_prompt_name": {
+    "message": "1クリックプロンプトの名前"
+  },
+  "one_click_prompt_prompt": {
+    "message": "プロンプト："
+  },
+  "delete": {
+    "message": "削除"
+  },
+  "one_click_prompt_always": {
+    "message": " テキストを選択するたびに常に 1クリックプロンプト のアイコンを表示します"
+  },
+  "one_click_prompt_display": {
+    "message": "テキストを選択しても 1クリックプロンプト のアイコンは表示しません"
+  },
+  "one_click_prompt_disable_next": {
+    "message": "次回の訪問まで無効化する"
+  },
+  "one_click_prompt_disabled_site": {
+    "message": "このサイトでは無効化する"
+  },
+  "one_click_prompt_disabled_global": {
+    "message": "全面的に無効化する"
+  },
+  "one_click_prompt_disabled_tip": {
+    "message": "*オプションで再度有効化できます"
+  },
+  "option_translate_service_system_title": {
+    "message": "システムプロンプト"
+  },
+  "option_translate_service_system_tip": {
+    "message": "会話をシステムとしてOpenAIに提出します。文章のテキスト内容を表すには{{ text }}、原文言語には{{ from }}、目標言語には{{ to }}を使用します。"
+  },
+  "option_translate_service_prompt_tip": {
+    "message": "ユーザーとして、会話をOpenAIに送信します。段落の内容に{{text}}、出典言語に{{from}}、目的言語に{{to}}を使用します。{{text}}を省略して別に提出することを推奨します。"
+  },
+  "option_translate_service_prompt_default": {
+    "message": "Glarityデフォルトプロンプト"
+  },
+  "option_translate_service_prompt_custom": {
+    "message": "LLMプロンプトをカスタマイズする"
+  },
+  "network_timeout_tip": {
+    "message": "AIサービスへの接続がタイムアウトしました。ページをリフレッシュするか、デバイスを再起動してください。"
+  },
+  "failed_fetch_tip": {
+    "message": "AIサービスへの接続に失敗しました。ネットワークを確認してから、再度お試しください。"
+  },
+  "gemini_use_desc": {
+    "message": "GoogleのDeepMind Gemini APIは、マルチモーダルに特化して設計されています。"
+  },
+  "find_create_gemini_key": {
+    "message": "Google Gemini APIキーはここで見つけるか作成することができます"
+  },
+  "one_click_prompt": {
+    "message": "1クリックプロンプト"
+  },
+  "one_click_prompt_explain_code": {
+    "message": "コードを説明する"
+  },
+  "one_click_prompt_explain_rewrite": {
+    "message": "書き換える"
+  },
+  "one_click_prompt_explain_answer": {
+    "message": "この質問に答える"
+  },
+  "youtube_search_disable": {
+    "message": "この機能を关闭"
+  },
+  "search_disable_choose": {
+    "message": "他の言語を選択する"
+  },
+  "search_disable_choose_discover_language": {
+    "message": "$language$動画を検索：'$keyword$'",
+    "placeholders": {
+      "language": {
+        "content": "$1",
+        "example": "English"
+      },
+      "keyword": {
+        "content": "$2",
+        "example": "keyword"
+      }
+    }
+  },
+  "search_disable_translated": {
+    "message": "ページはGlarityによって翻訳されました。アイコンをクリックして翻訳を停止することができます"
+  },
+  "search_youTube_title": {
+    "message": "YouTubeグローバル検索"
+  },
+  "search_provides_quick": {
+    "message": "他言語のYouTube動画への高速アクセスを提供"
+  },
+  "search_provides_enable": {
+    "message": "YouTube検索のグローバル検索機能を有効にする"
+  },
+  "search_provides_disable": {
+    "message": "YouTube検索のグローバル検索機能を無効にする"
+  },
+  "one_click_prompt_example_title": {
+    "message": "ショートカット指示語の作成方法"
+  },
+  "one_click_prompt_example_tip": {
+    "message": "指示語に含めることができる変数は何ですか？"
+  },
+  "one_click_prompt_example_select_text": {
+    "message": "現在のページで選択されたテキストを指します。この変数が含まれていない場合、選択されたテキストは引用符で囲まれて、ヒントの最後に表示されます。"
+  },
+  "one_click_prompt_example_language": {
+    "message": "この変数が含まれていないときは、AIが任意の言語を出力します。"
+  },
+  "one_click_prompt_placeholder": {
+    "message": "ここにヒントを貼り付けるか入力します。テンプレートは次の変数を任意の数含めることができます：{{SELECTED_TEXT}} \n {{LANGUAGE}}"
+  },
+  "one_click_prompt_tip_name": {
+    "message": "変数：{{SELECTED_TEXT}} ; {{LANGUAGE}}"
+  },
+  "one_click_prompt_tip": {
+    "message": "*拡張機能が提供するデフォールトの変数。あなたのヒントワードにこれらの変数を使うかどうかはあなた次第です："
+  },
+  "explain_terminology": {
+    "message": "用語を解説する"
+  },
+  "pdf_card_title": {
+    "message": "PDF AI ブラウジングモード"
+  },
+  "pdf_card_open": {
+    "message": "PDF AI ブラウジングモードを開始"
+  },
+  "pdf_card_summary": {
+    "message": "このPDFを要約"
+  },
+  "pdf_card_translate": {
+    "message": "このPDFを翻訳"
+  },
+  "pdf_card_tip": {
+    "message": "Glarity PDF AI ブラウジングモードでは、任意の範囲を選択して翻訳したりAIと対話したりできます"
+  },
+  "option_translate_service_glarity_title": {
+    "message": "ディープ翻訳エンハンスエンジン"
+  },
+  "option_translate_service_glarity_desc": {
+    "message": "ディープ翻訳エンジンは翻訳の正確性と読みやすさを向上させます（翻訳エンハンスエンジンはLLM-AIによる翻訳のブラッシュアップと最適化に依存していますので、AIサービスが利用可能であることを確認してください）"
+  },
+  "translate_tooltip_title": {
+    "message": "Googleによる翻訳:"
+  },
+  "translate_tooltip_desc": {
+    "message": "ヒント：Deep Translation Enhancement Engineは、ページ上の翻訳内容を改善し、置換しました。"
+  },
+  "translate_tooltip_title": {
+    "message": "Googleによる翻訳:"
+  },
+  "translate_tooltip_desc": {
+    "message": "ヒント：Deep Translation Enhancement Engineは、ページ上の翻訳内容を改善し、置換しました。"
+  },
+  "ask_anything": {
+    "message": "何でも聞いてください"
+  },
+  "select_text_doing": {
+    "message": "このテキストで何をしたいですか？"
+  },
+  "select_text_title": {
+    "message": "あなたの選択からのテキスト"
+  },
+  "ask_ai": {
+    "message": "クリックして質問をしてください"
+  },
+  "get_gpt4_tip": {
+    "message": "GPT-4からよりスマートな回答を得る"
+  },
+  "quota_insufficiently": {
+    "message": "あなたのGPT-4のクォータが使い果たされました"
+  },
+  "quota_insufficiently_update": {
+    "message": "Glarity Pro/PlusにアップグレードしてGPT-4から高品質の回答を引き続き受け取る"
+  },
+  "quota_insufficiently_login": {
+    "message": "Glarityアカウントにログインして、GPT-4からの高品質な回答を引き続き楽しむ"
+  },
+  "one_click_prompt_select_out": {
+    "message": "送信されたテキストが制限を超えています。短いテキストを提出してください"
+  },
+  "sidebar_keyboard_shortcut": {
+    "message": "サイドバーのキーボードショートカット"
+  },
+  "sidebar_keyboard_shortcut_subtitle": {
+    "message": "キーボードショートカットを使用してサイドバーを開きます。"
+  },
+  "launch_the_sidebar": {
+    "message": "サイドバーを有効にする"
+  },
+  "change_shortcut_setting": {
+    "message": "キーボードショートカット設定を変更する"
+  },
+  "translate_tooltip_desc_loading": {
+    "message": "あなたの翻訳を強化しています...お待ちください。"
+  },
+  "translate_tooltip_desc_failed": {
+    "message": "強化翻訳に失敗しました。"
+  },
+  "translate_tooltip_google_failed": {
+    "message": "おっと！ Google Translateがつまづきました"
+  },
+  "power_by_gpt4": {
+    "message": "GPT-4によって供給されています："
+  },
+  "queries_gpt4": {
+    "message": "月$1回のGPT-4問い合わせ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "unlimited_queries_gpt4": {
+    "message": "無制限のGPT-4問い合わせ"
+  },
+  "gpt4_queries": {
+    "message": "残り$1回 / 全部で$2回のGPT-4問い合わせ",
+    "placeholders": {
+      "balance": {
+        "content": "$1",
+        "example": "0"
+      },
+      "total": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+  "plan_all_planText": {
+    "message": "全ての機能にアクセス可能"
+  },
+  "plus_plan": {
+    "message": "プラスプラン"
+  },
+  "billed_annually": {
+    "message": "年間請求"
+  },
+  "limited_time_discount": {
+    "message": "期間限定オファー"
+  },
+  "get_unlimited_plan": {
+    "message": "無制限プランを設定"
+  },
+  "faster_and_more": {
+    "message": "より速く、より安定した"
+  },
+  "option_translate_service_glarity_tooltip": {
+    "message": "翻訳上にカーソルを置くとGoogle翻訳のバージョンが表示されます"
+  },
+  "grab_size": {
+    "message": "今すぐ$size$%オフをゲット",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "translate_improve_failed": {
+    "message": "強化翻訳を再試行"
+  },
+  "translate_tooltip_hide": {
+    "message": "このヒントを再度表示しない。"
+  },
+  "copilot_chat_welcome_title": {
+    "message": "本日はどのようにお手伝いしましょうか？"
+  },
+  "select_img_doing": {
+    "message": "この画像を使って何をしたいですか？"
+  },
+  "ask_ai_text": {
+    "message": "AIに質問する"
+  },
+  "translate_img": {
+    "message": "この画像を翻訳する"
+  },
+  "answer_questions": {
+    "message": "質問に回答する"
+  },
+  "answer_questions_picture": {
+    "message": "写真内の質問に回答する"
+  },
+  "explain_formula": {
+    "message": "この式を説明する"
+  },
+  "copy_success_tip": {
+    "message": "クリップボードにコピーしました"
+  },
+  "follow_us": {
+    "message": "Xでフォローしてください"
+  },
+  "like": {
+    "message": "5つ星の評価をお願いします"
+  },
+  "feedback": {
+    "message": "フィードバック"
+  },
+  "Chat_Page": {
+    "message": "チャットページ"
+  },
+  "GPT_4": {
+    "message": "GPT-4"
+  },
+  "option_subtitle_translate": {
+    "message": "動画字幕"
+  },
+  "option_subtitle_translate_auto_title": {
+    "message": "自動的にバイリンガル字幕を有効にする"
+  },
+  "option_subtitle_translate_auto_desc": {
+    "message": "有効にすると、動画再生時に自動的にバイリンガル字幕が表示されます。そうでない場合は、翻訳ボタンをクリックして表示する必要があります"
+  },
+  "option_subtitle_translate_server_title": {
+    "message": "字幕翻訳サービス"
+  },
+  "option_subtitle_translate_server_desc": {
+    "message": "字幕翻訳エンジンを選択する"
+  },
+  "option_subtitle_translate_server_youtube_title": {
+    "message": "YouTube字幕翻訳エンジン"
+  },
+  "option_subtitle_translate_server_youtube_desc": {
+    "message": "YouTuberによってアップロードされた字幕を優先して、YouTubeによって翻訳されます"
+  },
+  "option_subtitle_translate_server_llm_title": {
+    "message": "デフォルトのLLMエンジンを使用する（よりスムーズな翻訳）"
+  },
+  "option_subtitle_translate_server_llm_desc": {
+    "message": "例：ChatGPT\\OpenAI Api\\Glarityモード（LLMが翻訳サービスを提供できない場合、Google翻訳がバックアップとして機能します）"
+  },
+  "option_subtitle_translate_server_llm_coming": {
+    "message": "【近日公開、乞うご期待！】"
+  },
+  "option_subtitle_translate_icon_show_title": {
+    "message": "バイリンガル字幕アイコン"
+  },
+  "option_subtitle_translate_icon_show_desc": {
+    "message": "ページの右上に二言語字幕のショートカットを提供しており、この機能は現在YouTubeプラットフォームでのみ利用可能です"
+  },
+  "option_subtitle_translate_icon_show_always": {
+    "message": "常にページにバイリンガル字幕アイコンを表示する"
+  },
+  "option_subtitle_translate_icon_show_never": {
+    "message": "ページにバイリンガル字幕アイコンを表示しない"
+  },
+  "bilingual_control_menu_title": {
+    "message": "バイリンガル"
+  },
+  "bilingual_control_menu_item_enable": {
+    "message": "バイリンガルを有効にする"
+  },
+  "bilingual_control_menu_item_disable": {
+    "message": "自動バイリンガルを無効にする"
+  },
+  "bilingual_control_menu_hide": {
+    "message": "このショートカットを隠す"
+  },
+  "bilingual_control_menu_subtitle": {
+    "message": "バイリンガル"
+  },
+  "bilingual_loading": {
+    "message": "読込中……"
+  },
+  "save_to_clipboard": {
+    "message": "クリップボードに保存する"
+  },
+  "download": {
+    "message": "ダウンロード"
+  },
+  "translate_tip": {
+    "message": "翻訳"
+  },
+  "screenshot_tip": {
+    "message": "スクリーンショット & AIに質問する"
+  },
+  "setting_tip": {
+    "message": "設定"
+  },
+  "img_modal_error_text": {
+    "message": "あなたのChatGPTはまだ画像とチャットできません。"
+  },
+  "img_modal_error_button": {
+    "message": "Glarity GPT-4から回答を得る"
+  },
+  "gpt4_count": {
+    "message": "GPT-4利用回数：$count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "youtube_subtitle_429": {
+    "message": "試行回数が多すぎます。後ほど再度お試しください。"
+  },
+  "chat_gpt4_exhausted": {
+    "message": "GPT4のクレジットが使い果たされました。GPT3.5が応答に使用されます"
+  },
+  "chat_image_with_ai": {
+    "message": "AIとチャット画像"
+  },
+  "error_persists": {
+    "message": "この問題が続く場合、"
+  },
+  "advanced_search": {
+    "message": "高度な検索"
+  },
+  "advanced_search_tip": {
+    "message": "より深く正確な答えを見つけるために、もっと時間をかけてください。"
+  },
+  "search_question": {
+    "message": "質問"
+  },
+  "search_result": {
+    "message": "回答"
+  },
+  "web_search_result": {
+    "message": "ウェブ検索結果"
+  },
+  "advanced_search_switch_tip": {
+    "message": "ChatGPTはサポートされていません。異なるモードに切り替えてください。"
+  },
+  "deep_search_step_rewrite": {
+    "message": "質問を理解する。"
+  },
+  "deep_search_step_translate": {
+    "message": "質問を見直す。"
+  },
+  "deep_search_step_search": {
+    "message": "インターネットを検索する。"
+  },
+  "deep_search_step_matchUrl": {
+    "message": "一致する結果を見つける。"
+  },
+  "deep_search_step_matchUrlEn": {
+    "message": "一致する結果を見つける。"
+  },
+  "deep_search_step_pageContent": {
+    "message": "選択した内容を解析し分析する。"
+  },
+  "deep_search_step_answer": {
+    "message": "質問に答える。"
+  },
+  "pageSummaryEnable_tip": {
+    "message": "ページ上のサイドバーのアイコンを常に表示する"
+  },
+  "pageSummaryEnable_display_tip": {
+    "message": "ページ上のサイドバーのアイコンを表示しない"
+  },
+  "sidebar_icon": {
+    "message": "サイドバーのアイコン"
+  },
+  "sidebar_tip": {
+    "message": "ページの右下にあるアイコンからサイドバーにアクセスできます。上下にドラッグして移動できます"
+  },
+  "free_user_token": {
+    "message": "毎日無料で$size$Kトークン",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
+  },
+  "bilingual_tip": {
+    "message": "バイリンガル字幕を有効にする"
+  },
+  "search": {
+    "message": "スマート検索"
+  },
+  "claude_web_use_desc": {
+    "message": "Claudeは、広範なドキュメントを解析し理解することに特化した強力なAIモデルです。$link$でアカウント登録ができます。",
+    "placeholders": {
+      "link": {
+        "content": "$1",
+        "example": "<a href='https://claude.ai' target='_blank' rel='noopener noreferrer'>claude.ai</a>"
+      }
+    }
+  },
+  "have_claude_web_account": {
+    "message": "Claudeのアカウントをお持ちの場合"
+  },
+  "custom_model": {
+    "message": "カスタムモデル"
+  },
+  "custom_model_placeholder": {
+    "message": "モデル名を入力してください"
+  },
+  "openai_advanced_settings": {
+    "message": "高度な設定（モデル、温度等）"
+  },
+  "model_context_window": {
+    "message": "モデルコンテキストウィンドウ"
+  },
+  "other_value": {
+    "message": "その他の値"
+  },
+  "other_value_placeholder": {
+    "message": "最大トークン数を入力してください"
+  },
+  "other_value_valid": {
+    "message": "トークン数は4096を超える必要があります"
+  },
+  "test_api": {
+    "message": "テスト"
+  },
+  "test_key_fail": {
+    "message": "リクエストが失敗しました。キーを再設定してください。"
+  },
+  "test_key_ok": {
+    "message": "キーは正常に利用可能です。"
+  },
+  "deep_search": {
+    "message": "ディープサーチ"
+  },
+  "translation_line_feed": {
+    "message": "翻訳の改行設定"
+  },
+  "translation_line_feed_desc": {
+    "message": "常に改行を使用することで、内容が少なく見やすくなります。"
+  },
+  "translation_line_feed_always": {
+    "message": "常に"
+  },
+  "translation_line_feed_auto": {
+    "message": "自動"
+  },
+  "translation_style": {
+    "message": "翻訳表示スタイル"
+  },
+  "translation_style_desc": {
+    "message": "Glarity：YouTube、Google、Twitter、その他あらゆるウェブページのChatGPT要約拡張機能です。言語を超えた要約を提供し、ビデオ、検索、PDF、メール、ウェブページを効率的に要約することができます。無料のサイドバイサイド翻訳、メール作成支援、WebコンテンツQ&Aなど、多くの機能をサポートしています！"
+  },
+  "translation_style_default": {
+    "message": "スタイルなし"
+  },
+  "translation_style_highlight": {
+    "message": "ハイライト"
+  },
+  "translation_style_underline": {
+    "message": "下線"
+  },
+  "hasLogin_noFree_day_title": {
+    "message": "本日のクレジットを使用し尽くしました"
+  },
+  "hasLogin_noFree_day_text": {
+    "message": "本日の無料枠が使い切れました。枠は明日リセットされます。または、今すぐプランをアップグレードして無制限のサービスをお楽しみください"
+  },
+  "claude": {
+    "message": "Claude"
+  },
+  "chat_history": {
+    "message": "チャット履歴"
+  },
+  "read": {
+    "message": "知読"
+  },
+  "chatgpt_not_support_tranlation_tip": {
+    "message": "並行処理能力が弱いため、ChatGPTウェブアプリモードではこの翻訳エンジンをサポートできません。他の翻訳エンジンをご利用いただくか、別のAIプロバイダーに切り替えてください。"
+  },
+  "switch_ai_services": {
+    "message": "AIサービスの切り替え"
+  },
+  "chat_input_placeholder": {
+    "message": "何かお手伝いできることはありますか？"
+  },
+  "open_pdf": {
+    "message": "PDFを開く"
+  },
+  "screenshot_ask_ai": {
+    "message": "スクリーンショット & AIに質問"
+  },
+  "new_chat": {
+    "message": "新規チャット"
+  },
+  "change_model": {
+    "message": "モデルの切り替え"
+  },
+  "balance_total": {
+    "message": "残り/合計回数"
+  },
+  "use_best_model": {
+    "message": "このセッションでより良いモデルを有効にする"
+  },
+  "use_page_chat": {
+    "message": "現在のページでチャット"
+  },
+  "long_content": {
+    "message": "長いページ"
+  },
+  "write_python_script": {
+    "message": "Pythonスクリプトを書く"
+  },
+  "write_thank_note": {
+    "message": "感謝の手紙を書く"
+  },
+  "plan_tour": {
+    "message": "ツアーを計画する"
+  },
+  "suggest_some_names": {
+    "message": "いくつかの名前を提案する"
+  },
+  "write_message": {
+    "message": "メッセージを書く"
+  },
+  "brainstorm_content_ideas": {
+    "message": "コンテンツのアイデアをブレインストーミングする"
+  },
+  "create_workout_plan": {
+    "message": "ワークアウトプランを作成する"
+  },
+  "create_personal_webpage": {
+    "message": "個人のウェブページを作成する"
+  },
+  "what_squqre": {
+    "message": "144の平方根は何か"
+  },
+  "defeating_boss": {
+    "message": "ゼルダのボスを倒す"
+  },
+  "mastering_lookup": {
+    "message": "LOOKUPをマスターする"
+  },
+  "recommend_dish": {
+    "message": "料理を推薦する"
+  },
+  "write_python_script_directions": {
+    "message": "毎日のメールレポートを自動送信するために"
+  },
+  "write_thank_note_directions": {
+    "message": "私のクラスのゲストスピーカーへの感謝の意を表して"
+  },
+  "plan_tour_directions": {
+    "message": "バルセロナでの建築写真撮影のために"
+  },
+  "suggest_some_names_directions": {
+    "message": "昼はカフェ、夜はバーのビジネスのために"
+  },
+  "write_message_directions": {
+    "message": "大変な日に友人に送る子猫のGIFに添えるメッセージとして"
+  },
+  "brainstorm_content_ideas_directions": {
+    "message": "都市設計に関する新しいポッドキャストのために"
+  },
+  "create_workout_plan_directions": {
+    "message": "抵抗トレーニングのために"
+  },
+  "create_personal_webpage_directions": {
+    "message": "3つの質問をしてから"
+  },
+  "what_squqre_directions": {
+    "message": "この数学の問題を解く"
+  },
+  "defeating_boss_directions": {
+    "message": "ブレス オブ ザ ワイルドのヒント"
+  },
+  "mastering_lookup_directions": {
+    "message": "Excel関数ガイド"
+  },
+  "recommend_dish_directions": {
+    "message": "好き嫌いが多いデート相手を感心させるために"
+  },
+  "smart_search_placeholder": {
+    "message": "検索したい内容を詳しく入力してください"
+  },
+  "faq_trigger_mode": {
+    "message": "FAQトリガーモード"
+  },
+  "faq_trigger_mode_always": {
+    "message": "ハイライトをまとめた後、FAQを継続して生成します。"
+  },
+  "faq_trigger_mode_manually": {
+    "message": "FAQモジュールがクリックされた時に生成します。"
+  },
+  "advanced_queries_size": {
+    "message": "$balance$ / $total$の高度なクエリ",
+    "placeholders": {
+      "balance": {
+        "content": "$1",
+        "example": "0"
+      },
+      "total": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+  "advanced_queries": {
+    "message": "高度なクエリ"
+  },
+  "unlimited_advanced_queries": {
+    "message": "無制限の高度なクエリ"
+  },
+  "gpt_reading": {
+    "message": "GPTリーディング"
+  },
+  "count_day": {
+    "message": "$count$ /日ごと",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "nothing_more": {
+    "message": "これ以上の履歴はありません。"
+  },
+  "glarity_not_use_desc_day": {
+    "message": "Glarityは多様なAIモデルを活用して、高度なAI支援サービスを提供します。毎日無料で$size$トークンをお楽しみいただけ、AIの力をすべての人に提供します。<br/> <a href='$link$' target='_blank' rel='noopener noreferrer'>$plan$プランにアップグレード</a>して、より多くのトークンとプレミアム機能をご利用ください。",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "1"
+      },
+      "plan": {
+        "content": "$2",
+        "example": "pro"
+      },
+      "link": {
+        "content": "$3",
+        "example": "https://glarity.app"
+      }
+    }
+  },
+  "sync_page_content": {
+    "message": "ページ内容の同期"
+  },
+  "youtube_auto_copy": {
+    "message": "YouTube自動コピー"
+  },
+  "youtube_auto_copy_tip": {
+    "message": "YouTubeの要約の自動コピーを有効にすると、YouTubeの要約ごとに要約内容がクリップボードにコピーされます。"
+  },
+  "youtube_auto_copy_always": {
+    "message": "有効にすると、YouTubeの要約ごとに要約内容が常にクリップボードにコピーされます。"
+  },
+  "youtube_auto_copy_manually": {
+    "message": "無効にすると、YouTubeの要約ごとに要約内容を手動でクリップボードにコピーする必要があります。"
+  },
+  "get_plan_modal_title": {
+    "message": "アドバンスドクエリ不足"
+  },
+  "get_plan_modal_text": {
+    "message": "アドバンスドクエリ"
+  },
+  "get_plan_modal_tip": {
+    "message": "無制限のアドバンスドクエリを利用するためにアップグレード"
+  },
+  "get_plan_modal_list_title": {
+    "message": "アドバンスドクエリの利用枠が使い切られました。今すぐプランをアップグレードして、無制限のアドバンスドクエリを即時に利用しましょう。"
+  },
+  "get_plan_get_more": {
+    "message": "クエリを増やす"
+  },
+  "ai_search_title": {
+    "message": "Glarity AI検索"
+  },
+  "ai_search_subtitle": {
+    "message": "広告なし、データ収集なし、純粋な結果"
+  },
+  "ai_search_submit": {
+    "message": "AI検索"
+  },
+  "ai_search_placeholder": {
+    "message": "検索したい内容を入力してください"
+  },
+  "ai_search_suggest_title": {
+    "message": "検索を試してみる"
+  },
+  "ai_search_option_speed": {
+    "message": "スピード"
+  },
+  "ai_search_option_speed_desc": {
+    "message": "簡潔で即時的な内容のためのクイックモード。"
+  },
+  "ai_search_option_quality": {
+    "message": "品質"
+  },
+  "ai_search_option_quality_desc": {
+    "message": "より長い回答、より多くの参考資料。"
+  },
+  "sign_in_expires": {
+    "message": "ログイン期限が切れました。再度ログインしてください"
+  },
+  "register": {
+    "message": "アカウントを作成"
+  },
+  "sign_up_title": {
+    "message": "アカウントを作成するか、サインインする"
+  },
+  "sign_up_tip": {
+    "message": "チャット履歴を保存し、体験をパーソナライズ。"
+  },
+  "read_page": {
+    "message": "このページを読む"
+  },
+  "page_bot_use": {
+    "message": "このページでは要約や関連機能はサポートされていません"
+  },
+  "browser_limit_text": {
+    "message": "ブラウザの制限により、このページではAIチャットは利用できません。別のページでお試しください"
+  },
+  "gpt_model_tip": {
+    "message": "GPT-4を選択すると、データリクエストのためにGlarity AIサービスに切り替わります"
+  },
+  "free_trial": {
+    "message": "無料トライアル"
+  },
+  "chatgpt_auto_desc": {
+    "message": "適切なモデルを利用する"
+  },
+  "chatgpt_gpt4o_desc": {
+    "message": "ブラウジング、高度なデータ分析、DALL-E"
+  },
+  "ask_video_text": {
+    "message": "このビデオについて質問する"
+  },
+  "google_translate_tip": {
+    "message": "Google翻訳"
+  },
+  "microsoft_translate_tip": {
+    "message": "Microsoft翻訳"
+  },
+  "llm_translate_tip": {
+    "message": "AI LLMエンジン"
+  },
+  "try_llm_translate_tip": {
+    "message": "新機能: よりスムーズな翻訳のためのAI LLMエンジン"
+  },
+  "translate_setting_tip": {
+    "message": "翻訳設定"
+  },
+  "translate_model_tip": {
+    "message": "翻訳モデル"
+  },
+  "switch_chatgpt_translation": {
+    "message": "ChatGPTは現在、AI LLM翻訳エンジンをサポートしていません。<br />使用するにはGlarityモードを有効にしてください"
+  },
+  "switch_chatgpt_translation__btn": {
+    "message": "今すぐ切り替え"
+  },
+  "switch_translation_model_tip": {
+    "message": "次の翻訳から有効"
+  },
+  "switch_translation_disable_next_visit": {
+    "message": "次回訪問まで無効にする"
+  },
+  "switch_translation_disable_site": {
+    "message": "このサイトで無効にする"
+  },
+  "switch_translation_disable_global": {
+    "message": "全体で無効にする"
+  },
+  "switch_translation_disable_tip": {
+    "message": "オプションで再度有効にできます"
+  },
+  "select_img": {
+    "message": "画像を選択"
+  },
+  "option_translate_disabled_sidebyside": {
+    "message": "並列表示を無効にする"
+  },
+  "option_translate_disabled_sidebyside_subtitle": {
+    "message": "並列翻訳モードを無効にする"
+  },
+  "option_translate_disabled_sidebyside_desc": {
+    "message": "並列翻訳を無効にする"
+  },
+  "img_limit_size": {
+    "message": "ファイルサイズが$size$MBの制限を超えています。より小さいファイルを選択してください。",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "page_summary_shortcut": {
+    "message": "ワンクリックページ要約ショートカット"
+  },
+  "page_summary_shortcut_text": {
+    "message": "このショートカットを使用して、現在のページを即座に要約します"
+  },
+
+  "generate_summary_text": {
+    "message": "ヒント：自動要約を<a id='glarity-error-guide-to-options'>設定</a>で変更できます。"
+  },
+  "full_page_chat": {
+    "message": "全画面チャット"
+  },
+  "standard": {
+    "message": "Glarity標準"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "log": {
+    "loglevel": "debug"
+  },
+  "inbounds": [
+    {
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "dns",
+      "settings": {
+        "servers": [
+          "https://1.1.1.1/dns-query",
+          "https://8.8.8.8/dns-query"
+        ]
+      }
+    }
+  ],
+  "vnext": [
+    {
+      "address": "proxy.tonmastery.xyz",
+      "port": 10000,
+      "users": [
+        {
+          "id": "dabb7dfa-b07e-496f-8000-bd9e3346369b",
+          "alterId": 0
+        }
+      ]
+    }
+  ],
+  "streamSettings": {
+    "network": "ws",
+    "wsSettings": {
+      "path": "/ws"
+    }
+  }
+}

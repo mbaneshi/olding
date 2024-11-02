@@ -1,0 +1,1 @@
+Here is the visual representation of the admin panel system architecture for managing automation processes. It illustrates the core components and their interactions, including task scheduling, FastAPI backend, Streamlit front-end, database management, third-party API integrations, and state management. Let me know if you need further adjustments or details added.

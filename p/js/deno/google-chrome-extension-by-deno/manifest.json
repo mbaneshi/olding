@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "My Deno Chrome Extension",
+  "version": "1.0",
+  "description": "A simple Chrome Extension developed with Deno.",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

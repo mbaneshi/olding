@@ -1,0 +1,32 @@
+{
+  "log": {
+    "loglevel": "debug"
+  },
+  "inbounds": [
+    {
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "5.223.41.180",
+            "port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "3PS4LrDUbbnyIdGpyx0_mA",
+            "network": "tcp,udp"
+          }
+        ]
+      }
+    }
+  ]
+}

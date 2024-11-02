@@ -1,0 +1,42 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 4080, // This port will be used for local SOCKS5 proxy
+      "protocol": "socks", // Set inbound protocol to SOCKS5
+      "settings": {
+        "auth": "noauth", // No authentication required
+        "udp": true, // Enable UDP support
+        "ip": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless", // Use VLESS to connect to the server
+      "settings": {
+        "vnext": [
+          {
+            "address": "proxy.tonmastery.xyz", // Replace with your Xray server's domain
+            "port": 443, // Server port (usually 443 for TLS)
+            "users": [
+              {
+                "id": "f820af81-cd51-47a0-acd2-6f7d57d50127", // The UUID generated on the server
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws", // WebSocket as transport protocol
+        "security": "tls", // Enable TLS for encryption
+        "wsSettings": {
+          "path": "/ws" // The WebSocket path used in the server
+        }
+      }
+    }
+  ]
+}

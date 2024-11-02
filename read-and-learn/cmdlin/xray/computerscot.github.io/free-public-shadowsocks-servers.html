@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Create Free Public-Interest Shadowsocks Servers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:title" content="How to Create Free Public-Interest Shadowsocks Servers">
+  <meta property="og:description" content="The architecture in this post makes it safer for anyone to offer free public-interest Shadowsocks servers">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://computerscot.github.io/img/computerscot.png">
+  <meta property="og:url" content="https://computerscot.github.io/free-public-shadowsocks-servers.html">
+</head>
+
+<body>
+  <div id="bar">
+    <div class="wrapper">
+      <p><a href="index.html">computerscot.github.io</a></p>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h1>How to Create Free Public-Interest Shadowsocks Servers</h1>
+    <p><em>October 17, 2023</em></p>
+   
+    <h2>Overview</h2>
+    <p>Some people need a quick and free way to access a Shadowsocks server.</p>
+    <p>At the same time, other people are willing to provide free Shadowsocks servers, if they are in the public interest.</p>
+    <p>One thing that puts people off from providing free Shadowsocks servers is that you are effectively acting as an exit node. Whatever anyone does on your server can be blamed on you.</p>
+    <p>The architecture in this post addresses this problem. It makes it safer for anyone to offer free public-interest Shadowsocks servers.</p>
+<pre>
++----------+        +--------+--------+
+| SS       |        | SS     | Tor    |
+| Client   +------->+ Server + Client +------> TOR
+|          |        |        |        |
++----------+        +--------+--------+
+</pre>
+    <p>The free server accepts SS traffic, but forces it into the Tor network. The risk is shunted to the knowledgeable and well-resourced organizations who host Tor exit nodes.</p>
+    <p>Also, since Tor will be slower than a commercial VPN, your server will not be exploited by cheap people who want a VPN but want someone else to pay for it.</p>
+   <p>Note that an adversary with both the password and the ability to eavesdrop on network traffic could decrypt the outer layer of encryption. Therefore only use these servers for HTTPS sites and in situations were it does not matter if the Server Name Indicator might be exposed. The pages visited and the data itself will still be protected by HTTPS.</p>
+    <p>The remainder of this post shows you how to set up the server and gives an example of installing a client.</p>
+
+    <h2>Set Up Tor Client on Server</h2>
+    <p>Install the prerequisite package to access the Tor repositories:</p>
+    <blockquote><code>apt install -y apt-transport-https</code></blockquote>
+    <p>Create <code>/etc/apt/sources.list.d/tor.list</code> like the example below (the distribution here is Ubuntu 22.04, which is why the distribution is <code>jammy</code>):</p>
+    <blockquote><code>deb [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org jammy main</code></blockquote>
+    <blockquote><code>deb-src [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org jammy main</code></blockquote>
+    <p>Get the Tor signing key:</p>
+    <blockquote><code>wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --dearmor | tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null</code></blockquote>
+    <p>Install Tor:</p>
+    <blockquote><code>apt update && apt install -y tor deb.torproject.org-keyring</code></blockquote>
+    <p>By default, Tor listens for SOCKS traffic on port <code>9050</code>:</p>
+    <blockquote><code>systemctl status tor@default</code></blockquote>
+    <blockquote><code>ss -tulpn | grep 9050</code></blockquote>
+
+    <h2>Set Up Shadowsocks Server</h2>
+    <p>Choose a port:</p>
+    <blockquote><code>echo $((1024 + $RANDOM))</code></blockquote>
+    <p>Choose a password:</p>
+    <blockquote><code>< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c${1:-24};echo;</code></blockquote>
+    <p>Install the latest version of Xray to host your SS server:</p>
+    <blockquote><code>bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install --beta -u root</code></blockquote>
+    <p>Edit the Xray configuration file <code>/usr/local/etc/xray/config.json</code>. Make it look like this. Note that Tor handles TCP only, and therefore the SS input must also be TCP only. (Firefox has a feature to send DNS queries through a SOCKS tunnel.)</p>
+<pre>
+{
+    "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "type": "field",
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "block"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "port": &lt;PORT-NUMBER&gt;,
+            "protocol": "shadowsocks",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "&lt;PASSWORD&gt;",
+                        "method": "chacha20-ietf-poly1305"
+                    }
+                ],
+                "network": "tcp"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "socks",
+            "tag": "tor",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "127.0.0.1",
+                        "port": 9050
+                    }
+                ]
+             }
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ]
+}
+</pre>
+    <p>Restart Xray with your configuration:</p>
+    <blockquote><code>
+systemctl restart xray && systemctl status xray</code></blockquote>
+
+    <h2>Communicate Shadowsocks Parameters to Clients</h2>
+    <p>Supply the server IP address, port, password, and encryption method to the public. You can also supply them as a URI-style <code>ss://</code> link or as a QR code. Most SS clients can import server parameters from a URI or on-screen QR code.</p>
+    <p>The original Shadowsocks URI-style ss:// consisted of:</p>
+    <blockquote><code>ss://websafe-base64-encode(method:password@hostname:port)#remark</code></blockquote>
+    <p>Shadowsocks Improvement Proposal <a href="https://shadowsocks.org/doc/sip002.html">SIP002</a> purposed a new URI scheme, following <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC3986</a>, which looks like this:</p>
+    <blockquote><code>ss://websafe-base64-encode(method:password)@hostname:port#remark</code></blockquote>
+    <p>Some people use the original style, some people use the new style of <code>ss://</code> URIs.</p>
+
+    <h2>Clients</h2>
+    <p>Clients are available for many platforms. Here are some examples:</p>
+    <ul>
+      <li>For Windows, <a href="https://github.com/shadowsocks/shadowsocks-windows">Shadowsocks for Windows</a>, <a href="https://github.com/2dust/v2rayn">v2rayN</a>, or <a href="https://github.com/MatsuriDayo/nekoray">Nekoray</a></li>
+      <li>For macOS, <a href="https://github.com/shadowsocks/ShadowsocksX-NG">ShadowsocksX-NG</a></li>
+      <li>For Linux, <a href="https://github.com/v2rayA/v2rayA">v2rayA</a> or <a href="https://github.com/MatsuriDayo/nekoray">Nekoray</a></li>
+      <li>For Android, v2rayNG from <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">Google Play</a> or from <a href="https://github.com/2dust/v2rayNG">GitHub</a></li>
+      <li>For iOS and iPadOS, <a href="https://apps.apple.com/us/app/shadowrocket/id932747118">Shadowrocket</a></li>
+    </ul>
+    <p>We will give detailed installation instructions for Shadowsocks for Windows.</p>
+
+    <h3>Install Shadowsocks for Windows Client</h3>
+    <p>Open a browser and visit <a href="https://github.com/shadowsocks/shadowsocks-windows">https://github.com/shadowsocks/shadowsocks-windows</a>, the C# port of Shadowsocks.</p>
+    <img src="img/208.png" alt="GitHub repository for Shadowsocks for Windows">
+    <p>Scroll down and click <strong>Releases</strong> in the sidebar.<p>
+    <img src="img/209.png" alt="Releases link on GitHub page for Shadowsocks for Windows">
+    <p>The topmost release will be the most recent.<p>
+    <img src="img/210.png" alt="Shadowsocks for Windows most recent release">
+    <p>Scroll down to the <strong>Assets</strong> section, and download the <code>.zip</code> file.<p>
+    <img src="img/211.png" alt="Shadowsocks for Windows zip file on GitHub">
+    <p>The <code>.zip</code> file is saved to your <code>Downloads</code> folder.<p>
+    <img src="img/212.png" alt="Shadowsocks for Windows zip file downloaded to PC">
+    <p>Right-click on the <code>.zip</code> file, and select <strong>Extract All...</strong>.<p>
+    <img src="img/213.png" alt="Context menu to extract Shadowsocks for Windows zip file">
+    <p>In the extracted folder, click <code>Shadowsocks.exe</code> to launch the application.<p>
+    <img src="img/214.png" alt="Shadowsocks for Windows application exe file in extracted folder">
+    <p>Make sure your screen is displaying the QR code.</p>
+
+    <p>Click the up-arrow at the bottom right of your Windows desktop to bring up the icons in the system tray.</p>
+     <img src="img/195.png" alt="Windows system tray icon">
+    <p>Find the Shadowsocks icon. Right-click on it to bring up the Shadowsocks context menu. Select <strong>Servers</strong>, then select <strong>Scan QR code from Screen</strong>. Click <strong>OK</strong>.</p>
+    <img src="img/222.png" alt="Shadowsocks Scan QR code from Screen">
+    <p>Make sure you have set the <strong>System Proxy</strong> mode to <strong>Global</strong> (the Shadowsocks icon in the system tray changes color to show this is on).</p>
+    <img src="img/225.png" alt="Shadowsocks System Proxy Global">
+    <p>Open a browser and visit some websites. If you wish, you can check your apparent IP address by visiting <a href="https://check.torproject.org">https://check.torproject.org</a>.</p>
+    <img src="img/228.png" alt="https://check.torproject.org">
+    <p>When you are finished browsing, find the Shadowsocks icon in the system tray, right-click, and select <strong>Quit</strong>.</p>
+    <img src="img/226.png" alt="Shadowsocks Quit">
+
+    <h2>Support Forums</h2>
+    <ul>
+      <li>For Xray (which we are using here for the Shadowsocks server), <a href="https://t.me/projectXray">https://t.me/projectXray</a></li>
+      <li>For the Tor Project, <a href="https://forum.torproject.org">https://forum.torproject.org</a></li>
+      <li>For the Shadowsocks clients, refer to GitHub issues and discussions pages for individual clients</li>
+    </ul>
+
+  </div>
+
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "94e45ea74d58413395c468ebe6bab324"}'></script><!-- End Cloudflare Web Analytics -->
+  
+</body>
+
+</html>

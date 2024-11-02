@@ -1,0 +1,56 @@
+
+---
+- name: Setup Neovim with LazyVim
+  hosts: localhost
+  become: true
+  tasks:
+
+    - name: Ensure Neovim >= 0.9.0 is installed
+      apt:
+        name: neovim
+        state: present
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: Ensure Git >= 2.19.0 is installed
+      apt:
+        name: git
+        state: present
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: Ensure a C compiler is installed for nvim-treesitter
+      apt:
+        name: build-essential
+        state: present
+
+    - name: Optionally install Nerd Fonts
+      apt:
+        name: fonts-firacode
+        state: present
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: Backup old Neovim configuration
+      shell: mv ~/.config/nvim{,.bak}
+      ignore_errors: yes
+
+    - name: Clone LazyVim starter config
+      git:
+        repo: https://github.com/LazyVim/starter.git
+        dest: ~/.config/nvim
+      when: not (ansible_distribution == 'MacOSX')
+
+    - name: Remove LazyVim Git folder
+      file:
+        path: ~/.config/nvim/.git
+        state: absent
+
+    # Optional but recommended steps
+    - name: Backup ~/.local/share/nvim
+      shell: mv ~/.local/share/nvim{,.bak}
+      ignore_errors: yes
+
+    - name: Backup ~/.local/state/nvim
+      shell: mv ~/.local/state/nvim{,.bak}
+      ignore_errors: yes
+
+    - name: Backup ~/.cache/nvim
+      shell: mv ~/.cache/nvim{

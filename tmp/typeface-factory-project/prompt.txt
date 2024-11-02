@@ -1,0 +1,5 @@
+
+https://docs.google.com/document/d/1syKmI9KdMcwPia9L79HWE3jIVwEs0WxPWnhd9gsvZZ8/edit?tab=t.0
+
+we are going to build automated typeface factory ,we need your help to break down all element that finally comes toghether to make a unique typeface , our goal is expose it on the web , and based on user selection , we give them their unique typeface , so in addition to typeface charactristic design element , we also need relation between them and all other things , so we can have user interface that user declare their priority and simply we send url , or in future zip file containing all data needed they use on their unique digital product   
+

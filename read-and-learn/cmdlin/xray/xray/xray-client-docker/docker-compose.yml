@@ -1,0 +1,16 @@
+services:
+  xray-client:
+    image: teddysun/xray:latest
+    container_name: xray-client-dockerized
+    restart: unless-stopped
+    ports:
+      - "4080:4080"               # Expose the SOCKS5 proxy port to your host machine
+    volumes:
+      - ./config.json:/etc/xray/config.json  # Mount the client config file
+    networks:
+      - proxy-net                 # Use a network to isolate traffic
+
+networks:
+  proxy-net:
+    driver: bridge
+

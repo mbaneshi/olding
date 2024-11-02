@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Glarity</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <script src="sidepanel.js"></script>
+  <script src="arkose.js"></script>
+
+  <script>
+    const parentNode = document.body;
+    const timerClick = null;
+
+
+
+    function handleClick(node) {
+      const ariaHiddenValue = node.getAttribute('aria-hidden');
+
+      if (ariaHiddenValue === 'true') {
+        if (timerClick) {
+          clearTimeout(timerClick);
+        }
+
+        timerClick = setTimeout(() => {
+          document.getElementById('div.glarity--chat-error-button')?.click()
+        }, 2000)
+
+      }
+    }
+
+    const observer = new MutationObserver((mutationsList) => {
+      for (let mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          mutation.addedNodes.forEach(node => {
+            if (node.classList && node.classList.contains('arkose-35536E1E-65B4-4D96-9D97-6ADB7EFF8147-wrapper')) {
+              observeStyleChanges(node);
+            }
+          });
+        } else if (mutation.type === 'attributes' && mutation.attributeName === 'aria-hidden') {
+          const targetNode = mutation.target;
+
+          handleClick(targetNode);
+
+
+        }
+      }
+    });
+
+    const config = { childList: true, subtree: true, attributes: true, attributeFilter: ['aria-hidden'] };
+    observer.observe(parentNode, config);
+
+    function observeStyleChanges(node) {
+      const styleObserver = new MutationObserver((mutationsList) => {
+        for (let mutation of mutationsList) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'aria-hidden') {
+            handleClick(node);
+          }
+        }
+      });
+
+      styleObserver.observe(node, { attributes: true, attributeFilter: ['aria-hidden'] });
+    }
+
+
+  </script>
+
+</body>
+</html>

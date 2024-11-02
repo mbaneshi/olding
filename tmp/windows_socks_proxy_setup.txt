@@ -1,0 +1,83 @@
+To set up a SOCKS5 proxy from your server with root SSH access and connect it to your Windows 10 machine, you can use SSH tunneling. This method allows you to establish a proxy connection easily without any additional software installation on the server. Here’s a simple and easy approach:
+
+### Steps:
+
+#### 1. **Set Up SSH Tunnel for SOCKS5 Proxy**  
+You can use SSH to create a SOCKS5 proxy by connecting from your Windows machine to the server.
+
+1. **Download and Install PuTTY**  
+   - Download PuTTY from the official website: [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+   - Install it on your Windows machine.
+
+2. **Configure PuTTY for the SOCKS5 Proxy**  
+   Follow these steps to create an SSH tunnel using PuTTY:
+   
+   - Open **PuTTY** and enter the **IP address** or **domain** of your server in the "Host Name" field.
+   
+   - On the left side, under the **Category** panel, expand the **"Connection"** section and then expand **"SSH"**. Click on **Tunnels**.
+   
+   - In the "Source port" field, type `8080` (or any port you prefer).
+   
+   - Under "Destination", select the radio button that says **Dynamic**.
+   
+   - Choose **SOCKS5** as the proxy type.
+   
+   - Click the **Add** button.
+   
+   - Now go back to the **Session** section, and click **Open**. This will start an SSH session.
+
+   - Login using your **root credentials** or SSH key, and the SOCKS5 proxy will be established.
+
+#### 2. **Configure Windows to Use the SOCKS Proxy**
+
+Once the SSH tunnel is set up, you need to configure your Windows system to use the proxy.
+
+1. **Windows Network Settings (Optional Global Proxy Setup)**  
+   If you want to route all your traffic through the SOCKS proxy, follow these steps:
+   
+   - Go to **Settings** -> **Network & Internet** -> **Proxy**.
+   
+   - Under "Manual proxy setup," toggle **Use a proxy server** to **On**.
+   
+   - In the **Address** field, type `127.0.0.1`.
+   
+   - In the **Port** field, type the same port you used in PuTTY (e.g., `8080`).
+
+   - Save the changes, and now all your Windows applications will use this SOCKS5 proxy.
+
+2. **Browser Configuration (Selective Use)**  
+   If you only want to use the proxy for specific applications like a web browser, configure the browser settings:
+
+   - For **Firefox**:  
+     Open **Settings** -> **General** -> Scroll to **Network Settings** -> Click **Settings**.  
+     Select **Manual Proxy Configuration**, enter `127.0.0.1` as the **SOCKS Host** and `8080` as the port.  
+     Ensure **SOCKS5** is selected and check the **Proxy DNS when using SOCKS5** option.  
+   
+   - For **Chrome** (with an extension like **SwitchyOmega**):  
+     Install the **SwitchyOmega** extension, and configure it to use `127.0.0.1:8080` as a SOCKS5 proxy.
+
+#### 3. **Test the Proxy**
+
+To verify that your SOCKS proxy is working:
+
+- Use a browser to check your public IP address via websites like [https://whatismyip.com](https://whatismyip.com). It should show your server’s IP address instead of your Windows machine’s IP.
+
+### Optional: Make the Proxy Available to All Apps Automatically (via Proxifier)
+
+If you need to force all Windows applications to use the proxy without manual configuration, you can use software like **Proxifier**. This tool allows you to route all traffic through a SOCKS proxy easily.
+
+1. Download and install **Proxifier**: [https://www.proxifier.com/](https://www.proxifier.com/).
+2. Open **Proxifier**, go to **Profile** -> **Proxy Servers** -> **Add**.
+3. Enter the IP as `127.0.0.1` and the port as `8080`.
+4. Select **SOCKS5** and save.
+5. Proxifier will now route all your traffic through the SOCKS5 proxy.
+
+---
+
+This setup will give you a seamless proxy connection using SSH tunneling on Windows 10, allowing you to access the internet from your server.
+
+---
+**Filename:** `windows_socks_proxy_setup.txt`  
+**Timestamp:** 2024-10-13 14:45:00  
+**Description:** Steps to set up a SOCKS5 proxy on Windows 10 via SSH tunneling and PuTTY.  
+**Length:** 47 lines, 3367 characters

@@ -1,0 +1,14 @@
+https://github.com/jayywolff/dotfiles
+
+https://github.com/chaozwn/alacritty
+https://github.com/makccr/dot
+
+https://github.com/egeesin/pywal2alacritty
+
+https://github.com/antoniosarosi/pycritty
+https://github.com/denisse-dev/dotfiles
+https://github.com/tmcdonell/config-alacritty/blob/master/alacritty.yml
+https://github.com/tmcdonell/config-alacritty
+https://github.com/search?q=alacritty%20config&type=repositories
+https://github.com/alacritty/alacritty
+

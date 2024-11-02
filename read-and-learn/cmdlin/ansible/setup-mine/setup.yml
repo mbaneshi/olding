@@ -1,0 +1,45 @@
+
+---
+- name: Setup developer environment
+  hosts: all
+  tasks:
+    - name: Update APT package index
+      apt:
+        update_cache: yes
+
+    - name: Install Fish Shell
+      apt:
+        name: fish
+        state: present
+
+    - name: Set Fish as default shell for root
+      user:
+        name: root
+        shell: /usr/bin/fish
+
+    - name: Install Neovim latest from PPA
+      apt_repository:
+        repo: ppa:neovim-ppa/stable
+      apt:
+        name: neovim
+        state: present
+
+    - name: Install Docker from Docker’s official repository
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+      apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
+      apt:
+        name: docker-ce
+        state: present
+
+    - name: Install Node.js 18.x from NodeSource
+      shell: curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install Rust using rustup
+      shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
+      args:
+        creates: /root/.cargo/bin/rustc

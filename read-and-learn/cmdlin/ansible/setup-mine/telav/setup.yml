@@ -1,0 +1,77 @@
+
+---
+- name: Setup developer environment
+  hosts: all
+  tasks:
+    - name: Update APT package index
+      apt:
+        update_cache: yes
+
+    - name: Install Fish Shell
+      apt:
+        name: fish
+        state: present
+
+    - name: Set Fish as default shell for root
+      user:
+        name: root
+        shell: /usr/bin/fish
+
+
+    - name: Install Node.js 22.x from NodeSource
+      shell: curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+      args:
+        creates: /etc/apt/sources.list.d/nodesource.list
+
+    - name: Install Node.js
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install Rust using rustup
+      shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
+      args:
+        creates: /root/.cargo/bin/rustc
+
+    - name: Install Wezterm (latest)
+      shell: |
+        wget https://github.com/wez/wezterm/releases/download/20231001-1445/wezterm-20231001-1445-Ubuntu22.04.AppImage -O /usr/local/bin/wezterm
+        chmod +x /usr/local/bin/wezterm
+      args:
+        creates: /usr/local/bin/wezterm
+
+    - name: Install fzf
+      apt:
+        name: fzf
+        state: present
+
+    - name: Install Ripgrep (rg)
+      apt:
+        name: ripgrep
+        state: present
+
+    - name: Install curl
+      apt:
+        name: curl
+        state: present
+
+    - name: Install wget
+      apt:
+        name: wget
+        state: present
+
+    - name: Add GitHub CLI GPG key
+      apt_key:
+        url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
+        state: present
+
+    - name: Add GitHub CLI repository
+      apt_repository:
+        repo: deb [arch=amd64] https://cli.github.com/packages stable main
+        state: present
+
+    - name: Install GitHub CLI (gh)
+      apt:
+        name: gh
+        state: present
+

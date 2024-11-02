@@ -1,0 +1,14 @@
+latest go lang standard library high overview, and introduction for new developer , short description for any module along with its use-case and its critical feature , it need cover all available 
+
+
+***
+
+Now it is time to elaborate as much as possible on item number 1 , 
+1. fmt
+, as you mentioned it includes Functions like Println, Printf, and Sprintf make it easy to format strings, numbers, and objects.
+You must  respond to such that include elaboration on each one , bring how this module works , what capability or submodule it has , for example a bit introduction about critical functionality of each , and others. It should be mentioned that we have 20 entries , last one is20. unicode/utf8 , so we need to go through all of them but step by step , after you bring detail about the first entry , fmt , you wait and let me send nextstring in your input field and this process goes till the end , it means you will receive 20 next , till you reach final , so let's go 
+
+
+***
+
+next
